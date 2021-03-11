@@ -1,0 +1,57 @@
+/*Convert to old bootstrap breakpoint values*/
+$screen-xs-min : map-get($grid-breakpoints, "xs");
+$screen-sm-min : map-get($grid-breakpoints, "sm");
+$screen-md-min : map-get($grid-breakpoints, "md");
+$screen-lg-min : map-get($grid-breakpoints, "lg");
+$screen-xl-min : map-get($grid-breakpoints, "xl");
+
+$screen-xs-max : $screen-sm-min - 1;
+$screen-sm-max : $screen-md-min - 1;
+$screen-md-max : $screen-lg-min - 1;
+$screen-lg-max : $screen-xl-min - 1;
+
+$container-sm-desktop : map-get($container-max-widths, "sm");
+$container-md-desktop : map-get($container-max-widths, "md");
+$container-lg-desktop : map-get($container-max-widths, "lg");
+$container-xl-desktop : map-get($container-max-widths, "xl");
+
+
+/*
+* Header settings
+*/
+$navbar-height: 70px;
+$header-height: 80px;
+$header-height-fp: 110px;
+$header-bg-color: rgba(0,0,0,0.2);
+$header-txt-color: #fff;
+
+
+/*
+* Footer settings
+*/
+$footer-mob-height: 400px;
+$footer-height: 200px;
+$footer-bg-color: $cyan;
+$footer-txt-color: #fff;
+
+
+
+
+
+
+@mixin center-column( $center-column-width: 1100px ) {
+	max-width: $center-column-width;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin sharpfont{
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.btn{
+	text-decoration: none;
+}
+
