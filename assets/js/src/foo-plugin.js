@@ -1,6 +1,3 @@
-"use strict";
-
 /*Foobar plugin*/
 var foo__bar = true;
 console.log(foo__bar);
-//# sourceMappingURL=script.min.js.map

@@ -47,7 +47,7 @@ function styles() {
 }
 
 function scripts() {
-    return src('./assets/js/src/script.js')
+    return src('./assets/js/src/*.js')
         .pipe(include())
         .pipe(rename('script.min.js'))
         .pipe(babel({
@@ -55,7 +55,7 @@ function scripts() {
         }))
         .on('error', swallowError)
         .pipe(sourcemaps.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(sourcemaps.write('./'))
         .pipe(dest(pathFiles.build.js))
         .pipe(livereload());
