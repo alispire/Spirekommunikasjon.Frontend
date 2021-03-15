@@ -21,7 +21,9 @@ Redigeres I `./assets/scss` skrives ut som css I `./assets/css`.
 ### Javascript
 Kildefiler som skal inkluderes legges i `./assets/js/src` .
 Inkluder så filene i `assets/js/src/script.js`med følgende syntax. Eksempler:
+```
 //=require vendor/jquery.js
 //=require vendor/**/*.js
 //=include relative/path/to/file.js
 //=include ./relative/path/to/file-even-when-includePaths-set.js
+```
