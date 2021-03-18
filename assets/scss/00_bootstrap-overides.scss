@@ -22,7 +22,9 @@ $green:   #00E57E !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+
 $dark-green: #1D3F3D !default;
+$light-green: #CCFAE5 !default;
 
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
@@ -60,8 +62,13 @@ $link-color:                $primary !default;
 $link-decoration:           underline !default;
 
 
-$headings-font-family:        FraktionSans !default;
-$font-family-sans-serif:      lato, sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$headings-font-family:        lato !default;
+$font-family-sans-serif:      lato, times, sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif:      lato;
+
+$font-size-base:              1.1875rem !default; // Aprox 19px Assumes the browser default, typically `16px`
+$line-height-base:            1.5 !default;
+
 $headings-font-weight:        700 !default;
 
 /*Buttons*/

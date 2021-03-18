@@ -63,7 +63,7 @@ function scripts() {
 }
 // var html_path = ['./templates/*.html', './templates/modules/*.html'];
 function html(){
-    return src('./templates/*.html', {removeBOM:true})
+    return src(['./templates/*.html','./templates/*.svg'], {removeBOM:true})
         .pipe(include())
         .pipe(removeEmptyLines())
         .pipe(dest('./'))

@@ -1,0 +1,96 @@
+
+
+#site-footer{
+	padding-left: $grid-gutter-width;
+	padding-right: $grid-gutter-width;
+	background-color: $light-green;
+    // @include sharpfont;
+    font-size: 19px;
+    a{
+        color: $dark-green;
+    }
+}
+#site-footer-inner{
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+	max-width: $container-lg-desktop;
+	margin: auto;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+#footer-title{
+    font-family: FraktionSans;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-menu{
+    list-style-type: none;
+    padding: 0;
+    li{
+        padding: 0 0 $paragraph-margin-bottom 0;
+    }
+}
+
+#footer-newslt-symbol-wrap{
+    align-self: flex-end;
+    margin-bottom: $paragraph-margin-bottom*2;
+    @include clearfix;
+    // border: 1px solid red;
+}
+
+#site-footer #spire-symbol{
+    // position: absolute;
+    overflow: visible;
+    // float: right;
+    // right: 0px;
+    // bottom: 38px;
+    width: 70px;
+    @media ( min-width: $screen-sm-min ) {
+        margin-bottom: 15px;
+    }
+   
+
+}
+
+#footer-newsletter{
+    display: none;
+    text-align: right;
+    color: $dark-green;
+    @media ( min-width: $screen-sm-min ) {
+		display: block;
+	}
+}
+
+
+@media ( min-width: $screen-sm-min ) {
+    #footer-contact-wrapper{
+        // border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #footer-newslt-symbol-wrap{
+        // border: 1px solid red;
+        flex-basis: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 27px;
+        font-family: FraktionSans;
+
+    }
+    .footer-cont-col-100{
+        flex-basis: 100%;
+    }
+    .footer-cont-col-50{
+        flex-basis: 50%;
+    }
+    #footer-ledig-stilling{
+        margin-top: $paragraph-margin-bottom;
+    }
+    #footer-newsletter-link{
+        font-family: lato;
+        font-weight: 500;
+    }
+}

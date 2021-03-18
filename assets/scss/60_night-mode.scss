@@ -1,5 +1,5 @@
 body.night-mode{
-	color: #fff;
+	color: $body-bg;
 	background-color: $dark-green;
 	#site-header{
 
@@ -8,16 +8,33 @@ body.night-mode{
 	}
 	#spire-logo{
 		path{
-			fill: #fff;
+			fill: $body-bg;
+		}
+		&:hover{
+			path{
+				fill: $dark-green;
+			}
 		}
 	}
 	#main-menu-toggle{
-		color: #fff;
+		color: $body-bg;
 		span{
-			border-top-color: #fff;
-			border-bottom-color: #fff;
+			border-top-color: $body-bg;
+			border-bottom-color: $body-bg;
 			&::after{
-				background-color: #fff;
+				background-color: $body-bg;
+			}
+		}
+	}
+	#site-footer{
+		background-color: $dark-green;
+		@include sharpfont;
+		a{
+			color: $light-green;
+		}
+		#spire-symbol{
+			path{
+				fill: $green;
 			}
 		}
 	}

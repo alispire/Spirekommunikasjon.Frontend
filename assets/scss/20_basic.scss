@@ -1,4 +1,10 @@
-
+body{
+    @include sharpfont;
+    font-weight: 400;
+}
+h1{
+    font-family: FraktionSans;
+}
 /*Adobe fonts*/
 /*
 Lato Regular
@@ -43,7 +49,7 @@ Lato Semibold Italic
 font-family: lato, sans-serif;
 font-weight: 600;
 font-style: italic;
+
+
+
 */
-
-
-
