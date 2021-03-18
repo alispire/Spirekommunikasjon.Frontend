@@ -16,8 +16,13 @@
 		font-weight: bold;
 		color: $dark-green;
 		@include sharpfont;
-		&:hover{
-			background: lighten(#CCFAE5, 3%);
+		// border-top: 1px solid transparent;
+		&:hover,
+		&:focus{
+			outline: none;
+			background: lighten(#CCFAE5, 5%);
+			background: $green;
+			// border-top: 1px solid $green;			
 		}
 	}
 	@media ( min-width: $screen-lg-min ) {
@@ -38,8 +43,9 @@
 #main-menu-close{
 	display: block;
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 38px;
+	height: 38px;
+	border: 5px solid transparent;
 	margin-top: 45px;
 	margin-left: 20px;
 
@@ -50,7 +56,7 @@
 		display: block;
 		width: 30px;
 		height: 3px;
-		top:13px;
+		top:12.5px;
 		left: -1px;
 		background-color: $dark-green;
 
@@ -63,7 +69,18 @@
 	}
 	@media ( min-width: $screen-lg-min ) {
 		display: none;
-	}	
+	}
+	&:hover,
+	&:focus{
+		outline: none;
+		border-radius: 19px;
+		background-color: $dark-green;
+		border: 5px solid $dark-green;
+		&::after,
+		&::before{
+			background-color: #fff;
+		}
+	}
 }
 
 #main-menu-close span{

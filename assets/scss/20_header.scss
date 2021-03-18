@@ -1,24 +1,37 @@
 #site-header{
 	padding-left: $grid-gutter-width;
 	padding-right: $grid-gutter-width;
+	background-color: $body-bg;
+	border: 1px solid $gray-300;
 }
 #site-header-inner{
 	display: flex;
 	max-width: $container-lg-desktop;
 	margin: auto;
-	// border: 1px solid pink;
+	// 
 }
 
-
+#logo-wrapper{
+	&:hover,
+	&:focus{
+		outline: none;	
+		background: lighten(#CCFAE5, 3%);
+		path{
+			fill: $dark-green;
+		}
+	}
+}
 #spire-logo{
-	width: 50px;
+	width: 60px;
+	padding: 5px;
+	margin-top: 18px;
+	margin-bottom: 5px;
+	
 	path{
 
 	}
-	border: 1px solid $gray-200;
-	&:hover{
-		background: lighten(#CCFAE5, 3%);
-	}
+	// border: 1px solid $gray-200;
+	
 }
 
 
@@ -27,7 +40,7 @@
 
 
 #main-menu-wrapper{
-	// border: 1px solid $gray-200;
+	// border: 1px solid $gray-300;
 	z-index: 1000;
 	position: relative;
 	background: #CCFAE5;
@@ -50,7 +63,75 @@
 	}
 	@media (min-width: $screen-lg-min) {
 		background: transparent;
-		flex: 1 0 auto;
+		flex: 0 1 auto;
+	}
+}
+
+#main-menu-inner{
+	display: flex;
+}
+
+/*Night mode switch*/
+.ios-switch{
+	// border: 1px solid red;
+
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+	padding-top: 16px;
+	input[type="checkbox"]{
+		display: block;
+		margin-top: 0;
+		appearance: none;
+		-webkit-appearance: none;
+		width: 45px;
+		height: 25px;
+		border: 1px solid #666;
+		border-radius: 12px;
+		background-color: #000;
+		transition: all .2s ease-out;
+		&:after{
+			content: '';
+			display: block;
+			margin-top: 1px;
+			height: 21px;
+			width: 21px;
+			
+			
+			background-color: #00E57E;
+			background-image: url('../img/moon.png');
+			background-size: 12px;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 10px;
+			// box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+			transition: all .2s ease-out;
+			transform: translateX(2px);
+		}
+	}
+	// input[type="checkbox"]:active,
+	input[type="checkbox"]:focus {
+		outline: none;
+		box-shadow: 0px 0px 0px 6px $green;
+	}
+
+	input[type="checkbox"]:checked {
+		background-color: #fff;
+		border-color: #fff;
+		cursor: pointer;
+		&:after{
+			transform: translateX(20px);
+			background-color: $dark-green;
+			background-image: url('../img/sun.png');
+			background-size: 15px;
+		}
+
+	}
+	label{
+
+		@include visually-hidden();
 	}
 }
 
@@ -69,25 +150,12 @@
 
 
 
-
-
-
-
-
-
 #main-menu-toggle{
 	z-index: 999;
-	position: absolute;
-	top: 0px;
-	right: 22px;
-	// height: $navbar-height;
-	// border: 1px solid red;
-
-	padding: 15px 8px;
-	// background-color: black;
+	margin-top: 19px;
+	padding: 10px 8px;
 
 	color: $dark-green;
-	// text-transform: uppercase;
 	text-decoration: none;
 	text-align: right;
 	font-family: $headings-font-family;
@@ -101,12 +169,12 @@
 		flex-direction: column;
 		justify-content: center;
 		width: 30px;
-		margin-top: 8px;
+		margin-top: 9px;
 		
 
 		border-top: 3px solid $dark-green;
 		border-bottom: 3px solid $dark-green;
-		height: 20px;
+		height: 22px;
 		// @include sr-only;
 		&::after{
 			content: '';
@@ -116,8 +184,10 @@
 
 		}
 	}
-	&:hover{
-		// background-color: rgba(0, 0, 0, 0.2);
+	&:hover,
+	&:focus{
+		outline: none;
+		background-color: $green;
 	}
 	@media (min-width: $screen-lg-min) {
 		display: none;

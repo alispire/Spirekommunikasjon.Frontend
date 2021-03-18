@@ -1,11 +1,16 @@
 <header id="site-header" class="page-header">
 	<div id="site-header-inner">
-		<a href="/" title="Til forsiden av Spirekommunikasjon.no">
+		<a id="logo-wrapper" href="/" title="Til forsiden av Spirekommunikasjon.no">
 			<!--=include logo.html -->
 		</a>
-		<!--=include main-menu.html -->
+		<div class="ios-switch flat-filter">
+			<label for="night-switch">Nattmodus</label>
+			<input id="night-switch" type="checkbox" >
+		</div>
 		<a id="main-menu-toggle" href="#main-menu-toggle"  class="main-menu-toggle">
 			Meny<span></span>
 		</a>
+		<!--=include main-menu.html -->
+		
 	</div>
 </header>

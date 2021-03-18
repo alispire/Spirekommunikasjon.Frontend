@@ -1,0 +1,24 @@
+body.night-mode{
+	color: #fff;
+	background-color: $dark-green;
+	#site-header{
+
+		background-color: $dark-green;
+
+	}
+	#spire-logo{
+		path{
+			fill: #fff;
+		}
+	}
+	#main-menu-toggle{
+		color: #fff;
+		span{
+			border-top-color: #fff;
+			border-bottom-color: #fff;
+			&::after{
+				background-color: #fff;
+			}
+		}
+	}
+}
