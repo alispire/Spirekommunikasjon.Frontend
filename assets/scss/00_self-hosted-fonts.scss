@@ -1,0 +1,39 @@
+/*Self hosted*/
+@font-face {
+    font-family: 'FraktionSans';
+    src: url('../webfonts/FraktionSans/FraktionSans-Regular.woff2') format('woff2'),
+         url('../webfonts/FraktionSans/FraktionSans-Regular.woff') format('woff'),
+         url('../webfonts/FraktionSans/FraktionSans-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'FraktionSans';
+    src: url('../webfonts/FraktionSans/FraktionSans-RegularItalic.woff2') format('woff2'),
+         url('../webfonts/FraktionSans/FraktionSans-RegularItalic.woff') format('woff'),
+         url('../webfonts/FraktionSans/FraktionSans-RegularItalic.ttf') format('truetype');
+         font-weight: 400;
+         font-weight: normal;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: 'FraktionSans';
+    src: url('../webfonts/FraktionSans/FraktionSans-Bold.woff2') format('woff2'),
+         url('../webfonts/FraktionSans/FraktionSans-Bold.woff') format('woff'),
+         url('../webfonts/FraktionSans/FraktionSans-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-weight: bold;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'FraktionSans';
+    src: url('../webfonts/FraktionSans/FraktionSans-BoldItalic.woff2') format('woff2'),
+         url('../webfonts/FraktionSans/FraktionSans-BoldItalic.woff') format('woff'),
+         url('../webfonts/FraktionSans/FraktionSans-BoldItalic.ttf') format('truetype');
+         font-weight: 700;
+         font-weight: bold;
+         font-style: italic;
+}
+
