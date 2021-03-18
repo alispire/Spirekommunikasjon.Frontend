@@ -1,12 +1,126 @@
 #site-header{
-    
+	padding-left: $grid-gutter-width;
+	padding-right: $grid-gutter-width;
+}
+#site-header-inner{
+	display: flex;
+	max-width: $container-lg-desktop;
+	margin: auto;
+	// border: 1px solid pink;
 }
 
 
 #spire-logo{
-    width: 50px;
-    path{
+	width: 50px;
+	path{
 
-    }
-    border: 1px solid red;
+	}
+	border: 1px solid $gray-200;
+	&:hover{
+		background: lighten(#CCFAE5, 3%);
+	}
+}
+
+
+
+
+
+
+#main-menu-wrapper{
+	// border: 1px solid $gray-200;
+	z-index: 1000;
+	position: relative;
+	background: #CCFAE5;
+	@media ( max-width: $screen-md-max ) {
+		padding-top: 20px;
+		position: fixed;
+		top: 0px;
+		bottom:0px;
+		width: 320px;
+		left: 100%;
+		
+
+		transition: all 1s cubic-bezier(0,.54,.57,1);
+		transform: translatex( 0% );
+		// transform: translatex( -100% );
+		&.menu-out{
+			transform: translatex( -100% );
+			box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+		}
+	}
+	@media (min-width: $screen-lg-min) {
+		background: transparent;
+		flex: 1 0 auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main-menu-toggle{
+	z-index: 999;
+	position: absolute;
+	top: 0px;
+	right: 22px;
+	// height: $navbar-height;
+	// border: 1px solid red;
+
+	padding: 15px 8px;
+	// background-color: black;
+
+	color: $dark-green;
+	// text-transform: uppercase;
+	text-decoration: none;
+	text-align: right;
+	font-family: $headings-font-family;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1;
+	@include sharpfont;
+
+	span{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 30px;
+		margin-top: 8px;
+		
+
+		border-top: 3px solid $dark-green;
+		border-bottom: 3px solid $dark-green;
+		height: 20px;
+		// @include sr-only;
+		&::after{
+			content: '';
+			display: block;
+			height: 3px;
+			background-color: $dark-green;
+
+		}
+	}
+	&:hover{
+		// background-color: rgba(0, 0, 0, 0.2);
+	}
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+
 }

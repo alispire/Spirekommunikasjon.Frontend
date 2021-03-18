@@ -1,0 +1,22 @@
+#doc{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+    #site-header{
+        flex: 0 1 auto;
+        // border: 1px solid red;
+    }
+    #page-container{
+        // flex: 1 1 auto;border: 1px solid red;
+    }
+    #site-footer{
+        flex: 0 1 auto; 
+        // border: 1px solid red;
+    }
+
+
+
+
