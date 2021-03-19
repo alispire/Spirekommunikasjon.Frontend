@@ -1,7 +1,7 @@
 #site-header{
 	@include make-container();
 	background-color: $body-bg;
-	border: 1px dotted $gray-200;
+	// border: 1px dotted $gray-200;
 }
 #site-header-inner{
 	display: flex;
@@ -47,7 +47,7 @@
 		left: 100%;
 		
 
-		transition: all 1s cubic-bezier(0,.54,.57,1);
+		transition: all .5s cubic-bezier(0,.54,.57,1);
 		transform: translatex( 0% );
 		// transform: translatex( -100% );
 		&.menu-out{

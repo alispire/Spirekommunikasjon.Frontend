@@ -54,6 +54,7 @@ $footer-txt-color: #fff;
 	margin-left: calc(-100vw / 2 + 100% / 2);
     margin-right: calc(-100vw / 2 + 100% / 2);
     max-width: 100vw;
+	overflow: hidden;
 	padding-right: $grid-gutter-width;
     padding-left: $grid-gutter-width;
 	background-color: $bg-color;

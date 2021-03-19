@@ -1,91 +1,32 @@
-#main-menu-wrapper{
-	@media ( min-width: $screen-lg-min ) {
-		display: flex;
-		align-items: center;
-	}
+.module-front-page-top{
+    @include fullwidth-container(transparent);
+    // border: 1px solid red;
 }
-#main-menu{
-	list-style-type: none;
-	margin-bottom: 0;
-	margin:0;
-	padding:0;
-	a{
-		display: block;
-		padding: 5px 10px;
-
-		text-decoration: none;
-		text-align: right;
-		font-family: FraktionSans;
-		font-size: 29px;
-		font-weight: bold;
-		color: $dark-green;
-		@include sharpfont;
-		
-		&:hover,
-		&:focus{
-			outline: none;
-			background-color: $green;		
-		}
-	}
-	@media ( min-width: $screen-lg-min ) {
-		display: flex;
-		align-items: center;
-		
-		a{	
-			transition: background-color .2s ease-out;
-			border-radius: 40px;
-			padding: 10px 25px;
-			margin-left: 16px;
-			font-size: 25px;
-		}
-	}
-}
-
-
-
-#main-menu-close{
-	display: block;
-	position: relative;
-	width: 38px;
-	height: 38px;
-	border: 5px solid transparent;
-	margin-top: 45px;
-	margin-left: 20px;
-
-	&::after,
-	&::before{
-		content: '';
-		position: absolute;
-		display: block;
-		width: 30px;
-		height: 3px;
-		top:12.5px;
-		left: -1px;
-		background-color: $dark-green;
-
-	}
-	&::after{
-		transform: rotate(45deg);
-	}
-	&::before{
-		transform: rotate(-45deg);
-	}
-	@media ( min-width: $screen-lg-min ) {
-		display: none;
-	}
-	&:hover,
-	&:focus{
-		outline: none;
-		border-radius: 19px;
-		background-color: $dark-green;
-		border: 5px solid $dark-green;
-		&::after,
-		&::before{
-			background-color: #fff;
-		}
-	}
-}
-
-#main-menu-close span{
-	@include visually-hidden();
+.module-front-page-top-inner{
+    // border: 1px solid red;
+    @include center-column($screen-md-min);
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 150px;
+    .module-title{
+        position: relative;
+        width: 80%;
+        font-family: FraktionSans;
+        font-size: 40px;
+        line-height: 48px;
+        color: $dark-green;
+        margin-bottom: 54px;
+    }
+    .btn-wrap{
+        position: relative;
+    }
+    .snakkeboble{
+        // display: none;
+        position: absolute;
+        bottom: 0px;
+        left: 30%;
+        z-index: -1;
+        width: 330px;
+        // border: 1px solid red;
+    }
 }

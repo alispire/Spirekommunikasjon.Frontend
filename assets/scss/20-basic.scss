@@ -1,6 +1,8 @@
 body{
     @include sharpfont;
     font-weight: 400;
+    max-width: 100%;
+    // overflow: hidden;
 }
 h1{
     font-family: FraktionSans;
