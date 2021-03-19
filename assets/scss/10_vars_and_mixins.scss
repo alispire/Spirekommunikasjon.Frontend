@@ -4,16 +4,19 @@ $screen-sm-min : map-get($grid-breakpoints, "sm");
 $screen-md-min : map-get($grid-breakpoints, "md");
 $screen-lg-min : map-get($grid-breakpoints, "lg");
 $screen-xl-min : map-get($grid-breakpoints, "xl");
+$screen-xxl-min : map-get($grid-breakpoints, "xxl");
 
 $screen-xs-max : $screen-sm-min - 1;
 $screen-sm-max : $screen-md-min - 1;
 $screen-md-max : $screen-lg-min - 1;
 $screen-lg-max : $screen-xl-min - 1;
+$screen-xl-max : $screen-xxl-min - 1;
 
 $container-sm-desktop : map-get($container-max-widths, "sm");
 $container-md-desktop : map-get($container-max-widths, "md");
 $container-lg-desktop : map-get($container-max-widths, "lg");
 $container-xl-desktop : map-get($container-max-widths, "xl");
+$container-xxl-desktop : map-get($container-max-widths, "xxl");
 
 /*
 * Header settings

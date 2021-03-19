@@ -2,13 +2,13 @@
 	padding-left: $grid-gutter-width;
 	padding-right: $grid-gutter-width;
 	background-color: $body-bg;
-	border: 1px solid $gray-300;
+	border: 1px dotted $gray-200;
 }
 #site-header-inner{
 	display: flex;
-	max-width: $container-lg-desktop;
+	align-items: center;
+	max-width: $container-xxl-desktop;
 	margin: auto;
-	// 
 }
 
 #logo-wrapper{
@@ -22,19 +22,14 @@
 	}
 }
 #spire-logo{
-	width: 60px;
+	width: 67px;
 	padding: 5px;
-	margin-top: 18px;
+	margin-top: 15px;
 	margin-bottom: 5px;
-	
-	path{
-
+	@media (min-width: $screen-lg-min) {
+		width: 93px;
 	}
-	// border: 1px solid $gray-200;
-	
 }
-
-
 
 
 
@@ -73,14 +68,12 @@
 
 /*Night mode switch*/
 .ios-switch{
-	// border: 1px solid red;
-
 	display: flex;
 	flex: 1 0 auto;
 	justify-content: flex-end;
 	align-items: center;
 	padding-right: 20px;
-	padding-top: 16px;
+	padding-top: 8px;
 	input[type="checkbox"]{
 		display: block;
 		margin-top: 0;
@@ -90,7 +83,7 @@
 		height: 25px;
 		border: 1px solid #666;
 		border-radius: 12px;
-		background-color: #000;
+		background-color: #1D3F3D;
 		transition: all .2s ease-out;
 		&:after{
 			content: '';
@@ -152,7 +145,7 @@
 
 #main-menu-toggle{
 	z-index: 999;
-	margin-top: 19px;
+	margin-top: -10px;
 	padding: 10px 8px;
 
 	color: $dark-green;

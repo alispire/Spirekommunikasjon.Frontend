@@ -1,13 +1,17 @@
+#main-menu-wrapper{
+	@media ( min-width: $screen-lg-min ) {
+		display: flex;
+		align-items: center;
+	}
+}
 #main-menu{
-	// @include make-row();
 	list-style-type: none;
 	margin-bottom: 0;
 	margin:0;
 	padding:0;
-
 	a{
 		display: block;
-		padding: 5px 15px;
+		padding: 5px 10px;
 
 		text-decoration: none;
 		text-align: right;
@@ -16,24 +20,24 @@
 		font-weight: bold;
 		color: $dark-green;
 		@include sharpfont;
-		// border-top: 1px solid transparent;
+		
 		&:hover,
 		&:focus{
 			outline: none;
 			background: lighten(#CCFAE5, 5%);
-			background: $green;
-			// border-top: 1px solid $green;			
+			background: $green;		
 		}
 	}
 	@media ( min-width: $screen-lg-min ) {
-		// @include make-row();
 		display: flex;
-		justify-content: flex-end;
+		align-items: center;
 		
-		a{
-			padding: 1rem;
+		a{	
+			transition: all .2s ease-out;
+			border-radius: 40px;
+			padding: 10px 25px;
+			margin-left: 16px;
 			font-size: 25px;
-			// border: 1px solid green;
 		}
 	}
 }
