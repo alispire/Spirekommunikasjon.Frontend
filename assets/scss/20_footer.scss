@@ -1,8 +1,7 @@
 
 
 #site-footer{
-	padding-left: $grid-gutter-width;
-	padding-right: $grid-gutter-width;
+	@include make-container();
 	background-color: $light-green;
     // @include sharpfont;
     font-size: 19px;

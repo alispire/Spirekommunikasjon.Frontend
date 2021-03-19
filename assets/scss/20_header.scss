@@ -1,6 +1,5 @@
 #site-header{
-	padding-left: $grid-gutter-width;
-	padding-right: $grid-gutter-width;
+	@include make-container();
 	background-color: $body-bg;
 	border: 1px dotted $gray-200;
 }

@@ -41,10 +41,25 @@ $footer-txt-color: #fff;
 
 
 
-@mixin center-column( $center-column-width: 1100px ) {
+@mixin center-column( $center-column-width: $screen-md-min ) {
 	max-width: $center-column-width;
 	margin-right: auto;
 	margin-left: auto;
+}
+.center-column{
+	@include center-column();
+}
+
+@mixin fullwidth-container($bg-color:#ECECE7){
+	margin-left: calc(-100vw / 2 + 100% / 2);
+    margin-right: calc(-100vw / 2 + 100% / 2);
+    max-width: 100vw;
+	padding-right: $grid-gutter-width;
+    padding-left: $grid-gutter-width;
+	background-color: $bg-color;
+}
+.fullwidth-container{
+	@include fullwidth-container();
 }
 
 @mixin sharpfont{

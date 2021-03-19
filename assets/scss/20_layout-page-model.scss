@@ -17,6 +17,14 @@
         // border: 1px solid red;
     }
 
+        #page-container{
+            @include make-container();
+        }
+            #page-container-inner{
+                max-width: $container-xxl-desktop;
+                margin: auto;
+            }
+
 
 
 
