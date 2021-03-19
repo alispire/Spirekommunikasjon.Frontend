@@ -1,23 +1,21 @@
-@import "00_self-hosted-fonts.scss";
-@import "00_bootstrap-overides";
+@import "00-self-hosted-fonts.scss";
+@import "00-bootstrap-overides";
 
 @import "_bootstrap/bootstrap";
 
-@import "10_vars_and_mixins.scss";
-@import "20_buttons.scss";
-@import "20_layout-page-model.scss";
-@import "20_basic.scss";
-@import "20_skip-links.scss";
-@import "20_header.scss";
-@import "20_main-menu.scss";
-@import "20_footer.scss";
+@import "10-vars-and-mixins.scss";
+@import "20-buttons.scss";
+@import "20-layout-page-model.scss";
+@import "20-basic.scss";
+@import "20-skip-links.scss";
+@import "20-header.scss";
+@import "20-main-menu.scss";
+@import "20-footer.scss";
 
-@import "60_night-mode.scss";
+@import "30-module-front-page-top.scss";
 
+@import "60-night-mode.scss";
 
-// @import "__typography-rythm.scss";
-
-
-@import "99_print.scss";
+@import "99-print.scss";
 
 

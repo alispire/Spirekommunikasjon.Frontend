@@ -83,15 +83,13 @@
 		border: 1px solid #666;
 		border-radius: 12px;
 		background-color: #1D3F3D;
-		transition: all .2s ease-out;
+		transition: background-color .2s ease-out;
 		&:after{
 			content: '';
 			display: block;
 			margin-top: 1px;
 			height: 21px;
 			width: 21px;
-			
-			
 			background-color: #00E57E;
 			background-image: url('../img/moon.png');
 			background-size: 12px;
@@ -99,7 +97,7 @@
 			background-position: center;
 			border-radius: 10px;
 			// box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-			transition: all .2s ease-out;
+			transition: transform .2s ease-out;
 			transform: translateX(2px);
 		}
 	}
