@@ -1,13 +1,13 @@
 #site-header{
 	@include make-container();
-	background-color: $body-bg;
+	// background-color: $body-bg;
 	// border: 1px dotted $gray-200;
 }
 #site-header-inner{
 	display: flex;
 	align-items: center;
-	max-width: $container-xxl-desktop;
-	margin: auto;
+	// max-width: $container-xxl-desktop;
+	// margin: auto;
 }
 
 #logo-wrapper{
@@ -26,7 +26,8 @@
 	margin-top: 15px;
 	margin-bottom: 5px;
 	@media (min-width: $screen-lg-min) {
-		width: 93px;
+		width: 102px;
+		margin-top: 70px;
 	}
 }
 
@@ -122,6 +123,9 @@
 	label{
 
 		@include visually-hidden();
+	}
+	@media (min-width: $screen-lg-min) {
+		padding-top: 0;
 	}
 }
 

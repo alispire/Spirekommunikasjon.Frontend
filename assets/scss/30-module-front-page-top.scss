@@ -1,10 +1,11 @@
 .module-front-page-top{
     @include fullwidth-container(transparent);
     // border: 1px solid red;
+    overflow-y: visible;
 }
 .module-front-page-top-inner{
     // border: 1px solid red;
-    @include center-column($screen-md-min);
+    @include center-column($screen-lg-min);
     position: relative;
     padding-top: 40px;
     padding-bottom: 150px;
@@ -28,5 +29,20 @@
         z-index: -1;
         width: 330px;
         // border: 1px solid red;
+    }
+    @media ( min-width: $screen-lg-min ) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        .module-title{
+            
+            font-size: 60px;
+            line-height: 70px;
+            color: $dark-green;
+            margin-bottom: 90px;
+        }
+        .snakkeboble{
+            width: 818px;
+            // border: 1px solid red;
+        }
     }
 }
