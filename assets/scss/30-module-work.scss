@@ -1,0 +1,64 @@
+.arbeid-modul{}
+
+.module-work-inner{
+	border: 1px dotted $gray-300;
+	@include fullwidth-container(transparent);
+	padding-top: 20px;
+
+	.module-work-title{
+		font-weight: normal;
+		font-size: 26px;
+		a{
+			color: $dark-green;
+		}
+	}
+
+
+	.module-work-items{
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		margin-left: -$page-margin;
+		margin-right: -$page-margin;
+		padding-left: $page-margin;
+		padding-right: $page-margin;
+		// border: 1px solid red;
+	}
+		.module-work-item{
+			border: 1px solid pink;
+			width: 225px;
+			margin-right: $grid-gutter-width;
+			flex: 0 0 225px;
+			picture{
+				display: block;
+				margin-bottom: $paragraph-margin-bottom;
+			}
+		}
+
+			.module-work-tags{
+				padding: 0;
+				// margin: 0;
+				li{
+					display: inline;
+					a{
+						font-family: FraktionSans;
+						font-size: 16px;
+						color: $body-color;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.module-work-item-title{
+				font-size: 26px;
+			}
+
+			.module-work-introTxt{
+
+			}
+
+
+
+}
+
+

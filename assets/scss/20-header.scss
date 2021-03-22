@@ -1,16 +1,15 @@
-#site-header{
-	@include make-container();
-	// background-color: $body-bg;
-	// border: 1px dotted $gray-200;
-}
+#site-header{}
 #site-header-inner{
 	display: flex;
 	align-items: center;
-	// max-width: $container-xxl-desktop;
-	// margin: auto;
 }
 
 #logo-wrapper{
+	padding: 5px;
+	margin-left: -5px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	width: 50px;
 	&:hover,
 	&:focus{
 		outline: none;	
@@ -19,16 +18,26 @@
 			fill: $dark-green;
 		}
 	}
-}
-#spire-logo{
-	width: 67px;
-	padding: 5px;
-	margin-top: 15px;
-	margin-bottom: 5px;
 	@media (min-width: $screen-lg-min) {
+		width: 90px;
+		margin-top: 40px;
+		// border: 1px solid red;
+	}
+	@media (min-width: $screen-xxl-min) {
 		width: 102px;
 		margin-top: 70px;
+		// border: 1px solid green;
 	}
+}
+
+
+
+#spire-logo{
+	width: 100%;
+	
+
+	
+	
 }
 
 

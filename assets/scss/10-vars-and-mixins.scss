@@ -22,8 +22,12 @@ $container-xxl-desktop : map-get($container-max-widths, "xxl");
 * Header settings
 */
 $navbar-height: 70px;
-$header-height: 80px;
-$header-height-fp: 110px;
+$header-height-sm: 115px;
+$header-height-md: 115px;
+$header-height-lg: 225px;
+$header-height-xl: 225px;
+$header-height-xxl: 225px;
+
 $header-bg-color: rgba(0,0,0,0.2);
 $header-txt-color: #fff;
 
@@ -35,6 +39,8 @@ $footer-mob-height: 400px;
 $footer-height: 200px;
 $footer-bg-color: $cyan;
 $footer-txt-color: #fff;
+
+$page-margin: $grid-gutter-width;
 
 
 

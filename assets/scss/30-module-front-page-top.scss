@@ -1,48 +1,126 @@
 .module-front-page-top{
-    @include fullwidth-container(transparent);
-    // border: 1px solid red;
-    overflow-y: visible;
+	margin-left: -$page-margin;
+	margin-right: -$page-margin;
+	overflow-y: visible;
 }
 .module-front-page-top-inner{
-    // border: 1px solid red;
-    @include center-column($screen-lg-min);
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 150px;
-    .module-title{
-        position: relative;
-        width: 80%;
-        font-family: FraktionSans;
-        font-size: 40px;
-        line-height: 48px;
-        color: $dark-green;
-        margin-bottom: 54px;
-    }
-    .btn-wrap{
-        position: relative;
-    }
-    .snakkeboble{
-        // display: none;
-        position: absolute;
-        bottom: 0px;
-        left: 30%;
-        z-index: -1;
-        width: 330px;
-        // border: 1px solid red;
-    }
-    @media ( min-width: $screen-lg-min ) {
-        padding-top: 150px;
-        padding-bottom: 150px;
-        .module-title{
-            
-            font-size: 60px;
-            line-height: 70px;
-            color: $dark-green;
-            margin-bottom: 90px;
-        }
-        .snakkeboble{
-            width: 818px;
-            // border: 1px solid red;
-        }
-    }
+	max-width: $container-lg-desktop;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	padding-left: $page-margin;
+	padding-right: $page-margin;
+	padding-bottom: 150px;
+	.module-title{
+		position: relative;
+		width: 80%;
+		margin-bottom: 54px;
+
+		font-family: FraktionSans;
+		font-size: 40px;
+		line-height: 48px;
+		color: $dark-green;
+	}
+	.btn-wrap{
+		position: relative;
+	}
+	.snakkeboble-wrapper{
+		overflow: hidden;
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: -1;
+	}
+		#snakkeboble{
+			position: absolute;
+			width: 330px;
+			right: -55px;
+			bottom: 3%;
+		}
+	@media ( min-width: 400px ) {
+		#snakkeboble{
+			width: 360px;
+		}
+	}
+	@media ( min-width: 500px ) {
+		#snakkeboble{
+			width: 380px;
+			right: -30px;
+		}
+	}
+	@media ( min-width: $screen-sm-min ) {	
+		#snakkeboble{
+			// border: 1px solid red;
+		}
+	}
+	@media ( min-width: $screen-md-min ) {
+		.snakkeboble-wrapper{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			overflow: visible;
+		}
+		#snakkeboble{
+			// border: 1px solid green;
+			position: relative;
+			width: 480px;
+			right: auto;
+			bottom: auto;
+		}
+	}
+	@media ( min-width: $screen-lg-min ) {
+		padding-top: 100px;
+		padding-bottom: 150px;
+		#snakkeboble{
+			width: 580px;
+		}
+		.module-title{
+			width: 70%;
+		}
+
+	}
+	@media ( min-width: $screen-xl-min ) {
+		padding-top: 100px;
+		padding-bottom: 180px;
+		.module-title{
+			width: 65%;
+			margin-bottom: 50px;
+
+			font-size: 50px;
+			line-height: 59px;
+			color: $dark-green;
+		}
+		.snakkeboble-wrapper{
+			align-items: flex-start;
+			margin-top: -50px;
+			margin-right: -110px;
+		}
+		#snakkeboble{
+			width: 590px;
+		}
+		
+	}
+	@media ( min-width: $screen-xxl-min ) {
+		padding-top: 150px;
+		padding-bottom: 250px;
+		.module-title{
+			margin-bottom: 50px;
+			width: 75%;
+			// border: 1px solid red;
+
+			font-size: 59px;
+			line-height: 70px;
+			color: $dark-green;
+		}
+		.snakkeboble-wrapper{
+			margin-right: -110px;
+			margin-top: -50px;
+		}
+		#snakkeboble{
+			width: 750px;
+		}
+	}
 }

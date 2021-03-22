@@ -7,9 +7,26 @@
 }
 	#site-header{
 		flex: 0 1 auto;
+		// height: $header-height-sm;
+		// @media ( min-width: $screen-md-min ) {
+		// 	height: $header-height-md;
+		// }
+		// @media ( min-width: $screen-lg-min ) {
+		// 	height: $header-height-lg;
+		// }
+		// @media ( min-width: $screen-xl-min ) {
+		// 	height: $header-height-xl;
+		// }
+		// @media ( min-width: $screen-xxl-min ) {
+		// 	height: $header-height-xxl;
+		// }
+		// border: 1px solid red;
+
 	}
 		#site-header-inner{
 			@extend .container-md;
+			padding-left: $page-margin;
+			padding-right: $page-margin;
 		}
 
 
@@ -18,6 +35,9 @@
 	}
 		#page-container-inner{
 			@extend .container-md;
+			padding-left: $page-margin;
+			padding-right: $page-margin;		
+			border: 1px dotted $gray-300;
 		}
 
 
@@ -26,6 +46,8 @@
 	}
 		#site-footer-inner{
 			@extend .container-md;
+			padding-left: $page-margin;
+			padding-right: $page-margin;
 		}
 
 		
