@@ -1,0 +1,58 @@
+/* Skip Links
+---------------------------------------------------------------------------- */
+
+.skip-link {
+	margin: 0;
+	// border: 1px solid red;
+}
+
+.skip-link .skip-link-hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.skip-link li {
+	height: 0;
+	list-style: none;
+	width: 0;
+}
+
+.screen-reader-shortcut, 
+.screen-reader-text, 
+.screen-reader-text span {
+	// border: 0;
+	clip: rect(0, 0, 0, 0);
+	// clip: auto !important;
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus, 
+.screen-reader-shortcut:focus{
+	// background: $spire;		
+	// box-shadow: 0 0 2px 2px #000;
+	
+	@extend .btn;
+	@extend .btn-primary;
+	// @extend .btn-sm;
+		
+	box-shadow: none;
+	outline: none;
+	clip: auto !important;
+   
+	display: block;
+	top: 10px;
+	height: auto;
+	padding: 15px 23px 14px;
+	width: auto;
+	z-index: 100000;
+
+	// font-size: 1em;
+	font-weight: 700;
+	text-decoration: none;
+	// color: #333;
+}
+

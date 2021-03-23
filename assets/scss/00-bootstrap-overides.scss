@@ -1,3 +1,26 @@
+/*Spirefarger*/
+$spire: #00E57E;
+$spire-2: #99F5CB;
+$spire-3: #CCFAE5;
+
+$bregne: #127156;
+$bregne-2: #189672;
+$bregne-3: #46ABBE;
+$bregne-4: #74C0AA;
+$bregne-5: #A3D5C7;
+
+$furu: #1D3F3D;
+$furu-2: #4A6564;
+$furu-3: #b2b1ad;
+
+$dugg: #EDECE7;
+
+$morgensol: #EC6F50;
+$morgensol-2: #F08C73;
+$morgensol-3: #F4A996;
+$morgensol-4: #F7C5B9;
+$morgensol-4: #FBE2DC;
+
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -16,9 +39,9 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
-$orange:  #EC6F50 !default; 
+$orange:  $morgensol !default; 
 $yellow:  #ffc107 !default;
-$green:   #00E57E !default;
+$green:   $spire !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -63,6 +86,7 @@ $container-max-widths: (
 
 $body-bg:                   #fafafa !default;
 $body-color:                #040504 !default;
+$txt-color:                $body-color !default;
 $link-color:                $primary !default;
 $link-decoration:           underline !default;
 
