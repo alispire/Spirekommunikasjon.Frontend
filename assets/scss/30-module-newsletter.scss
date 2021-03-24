@@ -1,0 +1,22 @@
+.module-newsletter{
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+	.module-newsletter-inner{
+		text-align: center;
+		margin: 100px auto;
+		max-width: 315px;
+	}
+
+		.module-newsletter-title{
+			@include visually-hidden;
+		}
+		.module-newsletter-txt{
+			font-family: FraktionSans;
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 37px;
+		}
+
+		.module-newsletter-btn{}

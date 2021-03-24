@@ -114,7 +114,14 @@
 					}
 		}
 }
-
+@media (min-width: $screen-xxl-min) {
+	.module-work-item-title{
+		font-size: 37px;
+	}
+	.module-work-introTxt{
+		font-size: 27px;
+	}
+}
 
 .module-work-tags{
 	display: flex;
