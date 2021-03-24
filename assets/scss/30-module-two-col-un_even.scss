@@ -1,0 +1,114 @@
+.module-two-col-un_even{}
+	.module-two-col-un_even-inner{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		margin-left: -$page-margin;
+		margin-right: -$page-margin;
+		
+	
+
+		.item{
+			position: relative;
+			text-align: center;
+			margin-bottom: $page-margin*2;
+			padding-bottom: $page-margin*2;
+			// border: 1px solid $gray-200;
+			max-width: 400px;
+			.item-title{
+				font-family: FraktionSans;
+				padding-left: $page-margin;
+				padding-right: $page-margin;
+				// font-size: 30px;
+			}
+			p{
+				padding-left: $page-margin;
+				padding-right: $page-margin;
+			}
+		}
+		.item-img-wrap{
+			position: relative;
+			padding: $page-margin;
+			&:before{
+			content: '';
+				display: block;
+				position: absolute;
+				z-index: -1;
+				// height: 50px;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+			}
+		}
+		
+		.item-one{}
+			.item-one-img-wrap{
+				&:before{
+					bottom: 20%;
+					background-color: $green;
+				}
+			}
+
+		.item-two{
+			background-color: $dugg;
+		}
+			.item-two-img-wrap{
+				position: relative;
+				z-index: 1;
+				&:before{
+
+					bottom: 45%;
+					background-color: $body-bg;
+					z-index: -1;
+				}
+			}
+			
+		
+		
+
+		@media (min-width: $screen-md-min) {
+			// border: 1px solid red;
+			.item{
+				max-width: none;
+			}
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
+			.item-one{
+				order: 1;
+				align-self: flex-start;
+				margin-left: $grid-gutter-width;
+			}
+			.item-two{
+				margin-top: 11%;
+				align-self: flex-end;
+				margin-right: $grid-gutter-width;
+			}		
+
+		}
+		@media (min-width: $screen-lg-min) {
+			// border: 1px solid red;
+			padding-top: 150px;
+			.item-one{
+				// order: 1;
+				// align-self: flex-start;
+				// margin-left: $grid-gutter-width;
+			}
+			.item-two{
+				// margin-top: 40px;
+				// align-self: flex-end;
+				// margin-right: $grid-gutter-width;
+			}
+			.item p,
+			.item .item-title{
+				padding-left: $page-margin;
+				padding-right: $page-margin;
+			}
+			.item-img-wrap{
+				padding: $page-margin*2;
+			}
+
+		}
+	}
+

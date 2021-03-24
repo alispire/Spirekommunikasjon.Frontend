@@ -64,7 +64,7 @@ function scripts() {
 // var html_path = ['./templates/*.html', './templates/modules/*.html'];
 function html(){
     return src(['./templates/*.html','./templates/*.svg'], {removeBOM:true})
-        .pipe(include())
+        .pipe(include({ hardFail: true }))
         .pipe(removeEmptyLines())
         .pipe(dest('./'))
         .pipe(livereload());
