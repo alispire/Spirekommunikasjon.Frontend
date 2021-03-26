@@ -25,6 +25,16 @@ Så jeg må overskrive knappestilen her
     }
 }
 
+.btn-light{
+    background-color: $dugg;
+    border-color: $dugg;
+    color: $body-color;
+    &:hover{
+        background-color: darken($dugg,10%);
+        // border-color: $dark-green;
+    }
+}
+
 .btn-sm{
     font-size: 14px;
 }

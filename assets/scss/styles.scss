@@ -1,4 +1,5 @@
 @import "00-self-hosted-fonts.scss";
+@import "00-self-hosted-icons.scss";
 
 
 /*Bootstrap*/
@@ -29,7 +30,7 @@
 // @import "_bootstrap/navbar";
 // @import "_bootstrap/card";
 // @import "_bootstrap/accordion";
-// @import "_bootstrap/breadcrumb";
+@import "_bootstrap/breadcrumb";
 // @import "_bootstrap/pagination";
 // @import "_bootstrap/badge";
 // @import "_bootstrap/alert";
@@ -68,6 +69,8 @@
 @import "30-module-work.scss";
 @import "30-module-two-col-un_even.scss";
 @import "30-module-newsletter.scss";
+
+@import "30-page-work.scss";
 
 @import "60-night-mode.scss";
 

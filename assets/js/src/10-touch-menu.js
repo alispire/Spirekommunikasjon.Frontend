@@ -7,10 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	var triggers    = document.getElementsByClassName('main-menu-toggle');
 	var nightSwitch = document.getElementById('night-switch');
 	
+	// console.log('foo');
 	Array.from(triggers).forEach(function(element) {
-		element.addEventListener('click', () => {
+		element.addEventListener('click', (event) => {
 			body.classList.toggle('menu-out');
 			menu.classList.toggle('menu-out');
+			event.preventDefault();
 		});
 	});
 

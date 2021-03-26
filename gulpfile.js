@@ -47,7 +47,7 @@ function styles() {
 }
 
 function scripts() {
-    return src('./assets/js/src/*.js')
+    return src('./assets/js/src/script.js')
         .pipe(include())
         .pipe(rename('script.min.js'))
         .pipe(babel({
