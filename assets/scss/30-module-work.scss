@@ -1,8 +1,11 @@
 .module-work{
-	@include fullwidth-container(transparent);
-	display: flex;
-	justify-content: center;
+	@include fullwidth-container(); 
 
+	display: flex;
+	position: relative;
+	justify-content: center;
+	// display: block;
+	// border: 100px solid red;
 
 	.module-work-inner{
 		// margin-left: -$page-margin;
@@ -10,6 +13,8 @@
 		// padding-left: $page-margin;
 		// padding-right: $page-margin;
 		@extend .container-md;
+		position: relative;
+		margin-left: 0px;
 		padding-top: 20px;
 		padding-bottom: 20px;
 		// border: 1px solid $gray-300;
@@ -35,14 +40,12 @@
 			padding-right: $page-margin;
 			padding-bottom: $grid-gutter-width;
 			
-			// border: 1px solid red;
 			&::-webkit-scrollbar {
 				// display: none;
 			}
 		}
 			
 			.module-work-item{
-				// border: 1px solid pink;
 				width: 225px;
 				margin-right: $grid-gutter-width;
 				flex: 0 0 225px;
@@ -81,7 +84,8 @@
 		
 			.module-work-inner{
 				// border: 1px dotted purple;
-				margin: 0;
+				margin-left: 0;
+				margin-right: 0;
 				padding: 125px 0 125px 0;
 				
 				.module-work-title{
@@ -95,8 +99,7 @@
 					max-width: 100%;
 					margin: 0;
 					padding: 0;
-					overflow-x: visible;
-					// border: 1px dotted orangered;
+					overflow-x: hidden;
 				}
 					.module-work-item{
 						width: 30%;
@@ -104,7 +107,6 @@
 						margin: 0 0 35px 0;
 					}
 						.module-work-item-title{
-							
 						}
 			}
 	}

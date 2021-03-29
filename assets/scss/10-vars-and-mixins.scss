@@ -57,14 +57,23 @@ $page-margin: $grid-gutter-width;
 }
 
 @mixin fullwidth-container($bg-color:#ECECE7){
-	margin-left: calc(-100vw / 2 + 100% / 2);
-    margin-right: calc(-100vw / 2 + 100% / 2);
-    max-width: 100vw;
-	overflow-x: visible;
-	overflow-y: hidden;
-	padding-right: $grid-gutter-width;
-    padding-left: $grid-gutter-width;
-	background-color: $bg-color;
+	// margin-left: calc(-100vw / 2 + 100% / 2);
+    // margin-right: calc(-100vw / 2 + 100% / 2);
+    // max-width: 100vw;
+	// overflow-x: visible;
+	// overflow-y: hidden;
+	// padding-right: $grid-gutter-width;
+    // padding-left: $grid-gutter-width;
+
+	
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+	  
+	
 }
 .fullwidth-container{
 	@include fullwidth-container();

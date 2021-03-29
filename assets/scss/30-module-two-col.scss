@@ -1,0 +1,11 @@
+.module{
+	// border: 1px solid red;
+}
+
+.module-two-col{
+	@include make-row();
+	.module-collumn{
+		margin-bottom: 1rem;
+		// border: 1px solid green;
+	}
+}

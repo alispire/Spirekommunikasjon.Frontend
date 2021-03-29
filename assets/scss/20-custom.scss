@@ -9,8 +9,9 @@
 	}
 }
 
-
-.lead{
-	max-width: 800px;
-	margin-bottom: 80px;
+.article-main-content{
+	img{
+		margin-bottom: $paragraph-margin-bottom;
+	}
 }
+

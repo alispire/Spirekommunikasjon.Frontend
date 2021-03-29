@@ -1,0 +1,71 @@
+/**
+* based on:
+* http://typecast.com/blog/a-more-modern-scale-for-web-typography
+*/
+
+// body{
+// 	font-size: 16px;
+// }
+
+// h1 {
+//   font-size: 2rem;  /* 2x body copy size = 32px */
+//   line-height: 1.25; /* 45px / 36px */
+// }
+
+// h2 {
+//   font-size: 1.625rem; /* 1.625x body copy size = 26px */
+//   line-height: 1.15384615; /* 30px / 26px */
+// }
+// h3 {
+//   font-size: 1.375rem; /* 1.375x body copy size = 22px */
+//   line-height: 1.13636364; /* 25px / 22px */
+// }
+// h4 {
+//   font-size: 1.125rem; /* 1.125x body copy size = 18px */
+//   line-height: 1.11111111;
+// }
+
+
+
+@media (min-width: $screen-sm-min) {
+  // h1 {
+  //   font-size: 2.5rem; /* 2.5x body copy size = 40px */
+  //   line-height: 1.125;
+  // }
+  // h2 {
+  //   font-size: 2rem; /* 2x body copy size = 32px */
+  //   line-height: 1.25;
+  // }
+  // h3 {
+  //   font-size: 1.5rem; /* 1.5x body copy size = 24px */
+  //   line-height: 1.25;
+  // }
+}
+
+
+
+@media (min-width: $screen-xl-min) {
+  body{
+    font-size: 27px;
+  }
+	h1 {
+    font-size: 60px;
+
+  }
+  h2 {
+    font-size: 38px; 
+  }
+  .lead{
+    font-size: 38px; 
+  }
+}
+
+
+@media print {
+	body{
+		font-size: 12pt;
+	}
+	h1{
+		font-size: 36pt; //	1.25rem
+	}
+}

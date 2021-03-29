@@ -1,0 +1,53 @@
+.module-coffe-talk{
+
+
+	.item-img-wrap{
+		position: relative;
+		padding: $page-margin;
+		&:before{
+		content: '';
+			display: block;
+			position: absolute;
+			z-index: -1;
+			// height: 50px;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 20%;
+					background-color: $green;
+		}
+	}
+	.txt-wrap{
+		text-align: center;
+		font-family: FraktionSans;
+		padding-left: $page-margin;
+		padding-right: $page-margin;
+
+	}
+
+	@media (min-width: $screen-md-min) {
+		display: flex;
+		align-items: center;
+		.item-img-wrap{
+			flex: 0 0 300px;
+			&:before{
+				top: 0px;
+				left: 0px;
+				right: 20%;
+				bottom: 0px;
+			}
+		}
+		.txt-wrap{
+			padding-left: 0px;
+			text-align: left;
+			// border: 1px solid green;
+		}
+	}
+
+	@media (min-width: $screen-lg-min) {
+		.item-img-wrap{
+			flex: 0 0 400px;
+		}
+	}
+
+}

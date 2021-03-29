@@ -4,6 +4,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	animation: fadein 1s;
+	overflow: hidden;
 }
 @keyframes fadein {
 
@@ -42,7 +43,9 @@
 
 
 	#page-container{
-		flex: 1 1 auto; 
+		flex: 1 1 auto;
+		// display: flex;
+		// justify-content: flex-start
 	}
 		#page-container-inner{
 			@extend .container-md;
