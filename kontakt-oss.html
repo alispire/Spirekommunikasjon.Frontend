@@ -1,6 +1,7 @@
 <!doctype html><html class="no-js" lang="nb-NO"><head>    <meta charset="utf-8">    <title>Spire Kommunikasjon AS</title>    <meta name="description" content="">    <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="apple-touch-icon" href="assets/img/icon.png?f">    <link rel="icon" type="image/png" href="assets/img/icon.png?f"/>    <link rel="stylesheet" href="https://use.typekit.net/pwy0ifh.css">    <link rel="stylesheet" href="assets/css/style.min.css">    <script src="assets/js/script.min.js" defer></script>    <script src="https://kit.fontawesome.com/1f1f0cd021.js" crossorigin="anonymous"></script></head>
-<body>
+<body id="page-body" class="page">
 	<div id="doc">
+		<ul class="skip-link">			<li>				<a href="#main-menu-wrapper" class="screen-reader-shortcut">Gå til hovedmeny</a>			</li>			<li>				<a href="#main-content" class="screen-reader-shortcut">Gå til sidens innhold</a>			</li>		</ul>
 		<header id="site-header" class="page-header">			<div id="site-header-inner">				<a id="logo-wrapper" href="/" title="Til forsiden av Spirekommunikasjon.no">					<svg version="1.1" id="spire-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 200 300" style="enable-background:new 0 0 200 300;" xml:space="preserve">
 					<style type="text/css">
@@ -54,32 +55,152 @@
 							C174,281.8,169.3,279.9,165.8,276.2"/>
 					</g>
 					</svg>				</a>				<div class="ios-switch flat-filter">					<label for="night-switch">Nattmodus</label>					<input id="night-switch" type="checkbox" >				</div>				<a id="main-menu-toggle" href="#"  class="main-menu-toggle">					Meny<span></span>				</a>				<nav id="main-menu-wrapper">					<div class="main-menu-inner">				        <a id="main-menu-close" class="main-menu-toggle" href="#">				            <span>Lukk</span>				        </a>				        <div class="main-menu-inner2">				            <ul id="main-menu" class="menu">				                <li class="menu-item menu-item-tjenester">				                    <a href="tjenester.html"><span>Tjenester</span></a>				                </li>				                <li class="menu-item menu-item-tjenester">				                    <a href="arbeid.html"><span>Arbeid</span></a>				                </li>				                <li class="menu-item menu-item-home">				                    <a href="om-spire.html"><span>Om Spire</span></a>				                </li>				                <li class="menu-item menu-item-kontakt-oss">				                    <a href="kontakt-oss.html"><span>Kontakt</span></a>				                </li>                				            </ul>				        </div>				    </div>				</nav>			</div>		</header>
-		<main id="page-container">
-			<div id="page-container-inner">
-				<h1>Forside</h1>
-				<p>This is Spires Frontend boilerplate.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h2>Bør jeg sende nyhetsbrev</h2>
-				<ul>
-					<li>Liste</li>
-					<li>Våre avdelinger</li>
-					<li>Folka i Spire</li>
-					<li>Om oss</li>
-					<li>Ledig stilling</li>
-				</ul>
-				<div class="fullwidth-container">
-					<div class="container-sm">
-						<div class="row justify-content-center">
-							<div class="col-sm-12 col-md-8 col-lg-12">
-								<h3>Full bredde med bred spalte</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<main id="page-container" role="main">
+			<div id="page-container-inner" >
+					<h1>Kontakt oss</h1>
+					<p class="lead">Lorem ipsumccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<section class="module departments-wrapper">
+						<h2 class="departments-title">Avdelinger</h2>
+						<div class="departments">
+							<article class="department">
+								<h3 class="department-title">
+									<a class="" data-bs-toggle="collapse" href="#collapseOslo" role="button" aria-expanded="false" aria-controls="collapseOslo">Oslo
+									</a>
+									</h3>
+								<div class="collapse" id="collapseOslo">
+									<address>
+										<div><strong>Besøksadresse</strong>    Stortorvet 3, 0155 Oslo    <a href="#">Vis i kart</a></div>
+										<div><strong>Kontaktperson</strong>    <a href="#">Einar Strømstad</a></div>
+									</address>
+								</div>
+							</article>
+							<article class="department">
+								<h3 class="department-title">
+									<a class="" data-bs-toggle="collapse" href="#collapseJessheim" role="button" aria-expanded="false" aria-controls="collapseJessheim">Jessheim
+									</a>
+									</h3>
+								<div class="collapse" id="collapseJessheim">
+									<address>
+										<div><strong>Besøksadresse</strong>    Storgata 6, 2050 Jessheim    <a href="#">Vis i kart</a></div>
+										<div><strong>Kontaktperson</strong>    <a href="#">Ole Marius Simonsen</a></div>
+									</address>
+								</div>
+							</article>
+							<article class="department">
+								<h3 class="department-title">
+									<a class="" data-bs-toggle="collapse" href="#collapseFlisa" role="button" aria-expanded="false" aria-controls="collapseFlisa">Flisa
+									</a>
+								</h3>
+								<div class="collapse" id="collapseFlisa">
+									<address>
+										<div><strong>Besøksadresse</strong>    Kaffegata 78, 2270 Flisa    <a href="#">Vis i kart</a></div>
+										<div><strong>Kontaktperson</strong>    <a href="#">Marianne Sletten</a></div>
+									</address>
+								</div>
+							</article>
+							<article class="department">
+								<h3 class="department-title">
+									<a class="" data-bs-toggle="collapse" href="#collapseTrysil" role="button" aria-expanded="false" aria-controls="collapseTrysil">Trysil
+									</a>
+								</h3>
+								<div class="collapse" id="collapseTrysil">
+									<address>
+										<div><strong>Besøksadresse</strong>    Kaffegata 78, 2270 Flisa    <a href="#">Vis i kart</a></div>
+										<div><strong>Kontaktperson</strong>    <a href="#">Marianne Sletten</a></div>
+									</address>
+								</div>
+							</article>
+						</div>
+					</section>
+					<div class="article-main-content">
+						<div class="module module-md-padd  module-two-col row">
+							<div class="module-collumn col-md col-lg-5 order-md-2">
+								<p>
+									<img src="content-images/magasinforsider-960x540.jpg" alt="Magasin for Jessheimdagene" />
+								</p>
+								<p>
+									<img src="content-images/oppslag-magasin-1920x1080.jpg" alt="Magasin for Jessheimdagene" />
+								</p>
+							</div>
+							<div class="module-collumn col-md col-lg-7">
+								<h2>Kunden i fokus</h2>
+								<p>Vi vet at kundene eksponeres for mye reklame og mange inntrykk i løpet av en hel dag.</p>
+								<p>Ved utformingen av Supertorsdag var det derfor viktig å legge stor vekt på:</p>
+								<ul>
+									<li>Tydelig og ryddig oversikt over tilbudene</li>
+									<li>Å samle relevante bransjer eller tilbud.</li>
+									<li>Viser butikkenes egne logoer for rask gjenkjennelighet.</li>
+									<li>Bilder hjelper kunden å navigere raskt gjennom tilbudene.</li>
+									<li>Visuelt lett å kjenne igjen</li>
+									<li>Bakgrunnsfarge og stort klokkeslett skiller dag og natttilbud.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="module module-image">
+							<img 
+								srcset="content-images/oppslag-magasin-wide-1300x540.jpg 1300w,
+										content-images/oppslag-magasin-wide-2600x1080.jpg 2600w"
+										sizes="
+										(min-width: 1400px) 1272px, 
+										(min-width: 1200px) 1092px, 
+										(min-width: 992px) 912px,
+										100vw"
+								src="content-images/oppslag-magasin-wide-1300x540.jpg"
+								alt="Magasin for Jessheimdagene" />
+						</div>
+						<div class="module module-md-padd center-column">
+							<h2>Synlighet</h2>
+							<p>Ulike flater, formater og xxxxx i en rød tråd. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="module module-md-padd  module-two-col row">
+							<div class="module-collumn col-sm ">
+								<figure>
+									<img src="content-images/tekstilbannere-640x960.jpg"
+									srcset="content-images/tekstilbannere-1280x1920.jpg 2x"
+									alt="Tekstilbanner dekor i Supertorsdag profil" />
+									<figcaption>Tekstilbanner dekor i Supertorsdag profil</figcaption>
+								</figure>
+							</div>
+							<div class="module-collumn col-sm ">
+								<figure>
+									<img 
+									src="content-images/handlepose-640x960.jpg"
+									srcset="content-images/handlepose-1280x1920.jpg 2x" 
+									alt="Gigantisk handlepose i Supertorsdag profil" />
+									<figcaption>Gigantisk handlepose i Supertorsdag profil</figcaption>
+								</figure>
 							</div>
 						</div>
 					</div>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h3>Bør jeg sende nyhetsbrev</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<footer>
+						<article class="module module-md-padd  module-coffe-talk">
+							<div class="item-img-wrap">
+								<img src="content-images/kaffeprat-ole-marius-800x600.jpg" alt="" />
+							</div>
+							<div class="txt-wrap">
+								<h2 class="item-title">Vil du ta en kaffeprat?</h2>
+								<p><a href="ole-marius.html" btn btn-secondary>Kontakt prosjektleder Ole Marius</a></p>
+							</div>
+						</article>
+					</footer>
+				</article>
+				<section class="module-work">
+					<div class="module-work-inner">
+						<h2 class="module-work-title">
+							<a  href="referanser.html" title="Se våre referanser">Relaterte artikler</a>
+						</h2>
+						<div class="module-work-items">
+														<article class="module-work-item">															<div class="module-work-item-inner">																<a href="referanse.html" title="Cupido" rel="bookmark">																			<picture>																		<source media="(max-width: 719px)" srcset="content-images/cupido1-square.png" height="540" widyh="540">																		<source media="(min-width: 720px)" srcset="content-images/cupido1.png"  height="1920" widyh="1080">																		<img src="content-images/cupido1.png" alt="Cupido">																	</picture>																</a>																<ul class="work-tags module-work-tags">																	<li><a href="Visuell identitet">Visuell identitet</a></li>																	<li><a href="Nettside">Nettside</a></li>																</ul>																<h3 class="module-work-item-title"><a href="referanse.html" title="Cupido" rel="bookmark">	Cupido</a></h3>																<p class="module-work-introTxt">En kort intro som enkelt tar for seg evt. Kunde, problemstilling eller resultat.</p>															</div>														</article>														<article class="module-work-item">															<div class="module-work-item-inner">																<a href="referanse.html" title="Cupido" rel="bookmark">																			<picture>																		<source media="(max-width: 719px)" srcset="content-images/cupido1-square.png" height="540" widyh="540">																		<source media="(min-width: 720px)" srcset="content-images/cupido1.png"  height="1920" widyh="1080">																		<img src="content-images/cupido1.png" alt="Cupido">																	</picture>																</a>																<ul class="work-tags module-work-tags">																	<li><a href="Visuell identitet">Visuell identitet</a></li>																	<li><a href="Nettside">Nettside</a></li>																</ul>																<h3 class="module-work-item-title"><a href="referanse.html" title="Cupido" rel="bookmark">	Cupido</a></h3>																<p class="module-work-introTxt">En kort intro som enkelt tar for seg evt. Kunde, problemstilling eller resultat.</p>															</div>														</article>														<article class="module-work-item">															<div class="module-work-item-inner">																<a href="referanse.html" title="Cupido" rel="bookmark">																			<picture>																		<source media="(max-width: 719px)" srcset="content-images/cupido1-square.png" height="540" widyh="540">																		<source media="(min-width: 720px)" srcset="content-images/cupido1.png"  height="1920" widyh="1080">																		<img src="content-images/cupido1.png" alt="Cupido">																	</picture>																</a>																<ul class="work-tags module-work-tags">																	<li><a href="Visuell identitet">Visuell identitet</a></li>																	<li><a href="Nettside">Nettside</a></li>																</ul>																<h3 class="module-work-item-title"><a href="referanse.html" title="Cupido" rel="bookmark">	Cupido</a></h3>																<p class="module-work-introTxt">En kort intro som enkelt tar for seg evt. Kunde, problemstilling eller resultat.</p>															</div>														</article>						</div>
+						<div class="module-work-readmore"><a href="referanser.html">Se alle våre fagartikler</a></div>
+					</div>
+				</section>
+				<a id="back-to-top" href="#" class="back-to-top" role="button"> 
+					<svg xmlns="http://www.w3.org/2000/svg" class="arrow-up" viewBox="0 0 12.51 13.92"><defs><style>.arrow-up-cls{fill:#1d3f3d;}</style></defs>
+						<g id="Layer_1-2" data-name="Layer 1">
+							<path class="arrow-up-cls" d="M12.51,8.07,7,.42A1,1,0,0,0,6.18,0h0a1,1,0,0,0-.81.43L0,8.08,1.64,9.23,5.2,4.15v9.77h2V4.12l3.69,5.12Z"/>
+						</g>
+					</svg>
+					Tilbake til toppen </a>
 			</div>
 		</main>
 		<footer id="site-footer">			<div id="site-footer-inner">				<div id="footer-contact-wrapper">					<div class="footer-cont-col-100">						<p id="footer-title">Kontakt</p>						<p><a href="mailto:hei@spirekommunikasjon.no">hei@spirekommunikasjon.no</a></p>					</div>					<div class="footer-cont-col-50">						<ul class="footer-menu">							<li><a href="#" >Våre avdelinger</a></li>							<li><a href="#" >Folka i Spire</a></li>							<li><a href="#" >Om oss</a></li>							<li id="footer-ledig-stilling"><a href="#" >Ledig stilling</a></li>						</ul>					</div>					<div class="footer-cont-col-50">						<ul class="footer-menu">							<li><a href="#" >Facebook</a></li>							<li><a href="#" >Instagram</a></li>							<li><a href="#" >LinkedIn</a></li>						</ul>						<ul class="footer-menu">							<li><a href="#" >Personvern</a></li>						</ul>					</div>				</div>				<div id="footer-newslt-symbol-wrap">					<svg version="1.1" id="spire-symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
