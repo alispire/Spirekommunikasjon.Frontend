@@ -66,81 +66,93 @@
 						</div>
 
 					</section>
-					<div class="article-main-content">
+					<section class="article-main-content section-people">
+						<h2>Folka</h2>
+
+						<!--Script kun for frontend-utvikling -->
+						<script>
+							document.addEventListener('DOMContentLoaded', () => {
+								var triggers    = document.getElementsByClassName('quick-filter-btn');
+								Array.from(triggers).forEach(function(element) {
+									element.addEventListener('click', (event) => {
+										event.preventDefault();
+										var state = event.target.getAttribute('aria-selected');
+										console.log(typeof state);
+										if( state === 'true' ){
+											event.target.setAttribute( 'aria-selected', 'false' );
+										}else{
+											event.target.setAttribute( 'aria-selected', 'true' );
+										}
+										event.target.blur( );
+									});
+								});
+							});
+						</script>
+						<!--Script kun for frontend-utvikling -->
 
 
-						<div class="module module-md-padd  module-two-col row">
-							<div class="module-collumn col-md col-lg-5 order-md-2">
-								<p>
-									<img src="content-images/magasinforsider-960x540.jpg" alt="Magasin for Jessheimdagene" />
-								</p>
-								<p>
-									<img src="content-images/oppslag-magasin-1920x1080.jpg" alt="Magasin for Jessheimdagene" />
-								</p>
-							</div>
-							<div class="module-collumn col-md col-lg-7">
-								<h2>Kunden i fokus</h2>
-								<p>Vi vet at kundene eksponeres for mye reklame og mange inntrykk i løpet av en hel dag.</p>
-								<p>Ved utformingen av Supertorsdag var det derfor viktig å legge stor vekt på:</p>
-								<ul>
-									<li>Tydelig og ryddig oversikt over tilbudene</li>
-									<li>Å samle relevante bransjer eller tilbud.</li>
-									<li>Viser butikkenes egne logoer for rask gjenkjennelighet.</li>
-									<li>Bilder hjelper kunden å navigere raskt gjennom tilbudene.</li>
-									<li>Visuelt lett å kjenne igjen</li>
-									<li>Bakgrunnsfarge og stort klokkeslett skiller dag og natttilbud.</li>
-								</ul>
-							</div>
-						</div>
+						<nav class="filter">
+							<div class="filter-title">Hurtigfilter</div>
+							<ul class="quick-filter">
+								<li><a href="#" class="quick-filter-btn" aria-selected="false"><i class=""></i>Rådgivere</a></li>
+								<li><a href="#" class="quick-filter-btn" aria-selected="false">Designere</a></li>
+								<li><a href="#" class="quick-filter-btn" aria-selected="false">Utviklere</a></li>
+								<li><a href="#" class="quick-filter-btn" aria-selected="false">Administrasjon</a></li>
+								<li><a href="#" class="quick-filter-btn" aria-selected="false">Produksjon</a></li>
+								<li><a href="#" class="quick-filter-btn" aria-selected="false">Lager og logistikk</a></li>
+							</ul>
+							
+						</nav>
+						<div class="people-list">
+							<article class="person" itemscope itemtype="https://schema.org/Person">
+								<div class="person-img-wrap" >
+								<img srcset="content-images/anders-fjeld-430x287.jpg 430w,
+									content-images/anders-fjeld-860x573.jpg 2x"
+									src="content-images/anders-fjeld-430x287.jpg"
+									alt="Anders Fjeld"
+									itemprop="image" />
+								</div>
+									<h3 class="person-name" itemprop="name">Anders Fjeld</h3>
+									<span itemprop="jobTitle">Daglig leder og rådgiver</span>
+									<div itemprop="telephone">+47 950 36 984</div>
+									<div><a href="mailto:anders@spirekommunikasjon.no" itemprop="email">
+									anders@spirekommunikasjon.no</a></div>
 
+							</article>
+							<article class="person" itemscope itemtype="https://schema.org/Person">
+								<div class="person-img-wrap" >
+								<img srcset="content-images/anders-fjeld-430x287.jpg 430w,
+									content-images/anders-fjeld-860x573.jpg 2x"
+									src="content-images/anders-fjeld-430x287.jpg"
+									alt="Anders Fjeld"
+									itemprop="image" />
+								</div>
+									<h3 class="person-name" itemprop="name">Anders Fjeld</h3>
+									<span itemprop="jobTitle">Daglig leder og rådgiver</span>
+									<div itemprop="telephone">+47 950 36 984</div>
+									<div><a href="mailto:anders@spirekommunikasjon.no" itemprop="email">
+									anders@spirekommunikasjon.no</a></div>
 
-						<div class="module module-image">
-							<img 
-								srcset="content-images/oppslag-magasin-wide-1300x540.jpg 1300w,
-										content-images/oppslag-magasin-wide-2600x1080.jpg 2600w"
-										sizes="
-										(min-width: 1400px) 1272px, 
-										(min-width: 1200px) 1092px, 
-										(min-width: 992px) 912px,
-										100vw"
-								src="content-images/oppslag-magasin-wide-1300x540.jpg"
-								alt="Magasin for Jessheimdagene" />
-						</div>
+							</article>
+							<article class="person" itemscope itemtype="https://schema.org/Person">
+								<div class="person-img-wrap" >
+								<img srcset="content-images/anders-fjeld-430x287.jpg 430w,
+									content-images/anders-fjeld-860x573.jpg 2x"
+									src="content-images/anders-fjeld-430x287.jpg"
+									alt="Anders Fjeld"
+									itemprop="image" />
+								</div>
+									<h3 class="person-name" itemprop="name">Anders Fjeld</h3>
+									<span itemprop="jobTitle">Daglig leder og rådgiver</span>
+									<div itemprop="telephone">+47 950 36 984</div>
+									<div><a href="mailto:anders@spirekommunikasjon.no" itemprop="email">
+									anders@spirekommunikasjon.no</a></div>
 
-						<div class="module module-md-padd center-column">
-							<h2>Synlighet</h2>
-							<p>Ulike flater, formater og xxxxx i en rød tråd. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+							</article>
+							
+						<div>
 
-
-						<div class="module module-md-padd  module-two-col row">
-							<div class="module-collumn col-sm ">
-								<figure>
-									<img src="content-images/tekstilbannere-640x960.jpg"
-									srcset="content-images/tekstilbannere-1280x1920.jpg 2x"
-									alt="Tekstilbanner dekor i Supertorsdag profil" />
-									<figcaption>Tekstilbanner dekor i Supertorsdag profil</figcaption>
-								</figure>
-								
-							</div>
-							<div class="module-collumn col-sm ">
-								<figure>
-									<img 
-									src="content-images/handlepose-640x960.jpg"
-									srcset="content-images/handlepose-1280x1920.jpg 2x" 
-									alt="Gigantisk handlepose i Supertorsdag profil" />
-									<figcaption>Gigantisk handlepose i Supertorsdag profil</figcaption>
-								</figure>
-							</div>
-						</div>
-
-						
-
-						
-
-
-
-					</div>
+					</section>
 					<footer>
 						<article class="module module-md-padd  module-coffe-talk">
 							<div class="item-img-wrap">

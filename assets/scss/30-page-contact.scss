@@ -10,3 +10,40 @@
 		}
 		address{}
 	}
+
+
+.section-people{
+	padding-top: 60px;
+	
+}
+	.people-list{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		.person{
+			margin-bottom: 40px;
+			max-width: 430px;
+			font-size: 19px;
+		}
+			.person-name{
+				font-size: 26px;
+				font-weight: 500;
+			}
+		
+		@media (min-width: $screen-md-min) {
+			flex-direction: row;
+			margin-left: -$grid-gutter-width;
+			margin-right: -$grid-gutter-width;
+			.person{
+				width: 50%;
+				padding-left: $grid-gutter-width;
+				padding-right: $grid-gutter-width;
+			}
+		}
+		@media (min-width: $screen-xl-min) {
+			.person{
+				width: 33.3%;
+			}
+		}
+	}

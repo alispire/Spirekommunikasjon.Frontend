@@ -1,0 +1,54 @@
+.filter{
+
+}
+.filter-title{
+	font-family: FraktionSans;
+	margin-bottom: $page-margin/2;
+}
+.quick-filter{
+	list-style-type: none;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0 0 10px 0;
+	display: flex;
+	flex-flow: wrap;
+	
+	li{
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+.quick-filter-btn{
+	@extend .btn;
+	@extend .btn-light;
+	@extend .btn-sm;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	white-space: nowrap;
+	&:before{
+		font-family: "dripicons-v2" !important;
+		content: "";
+		display: inline-block;
+		width: 1rem;
+		padding-right: 3px;
+		margin-left: -1rem;
+		font-style: normal !important;
+		font-weight: normal !important;
+		font-variant: normal !important;
+		text-transform: none !important;
+		vertical-align: middle; 
+		speak: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: $dugg;
+	}
+	&[aria-selected="true"]{
+		@extend .btn-secondary;
+		
+		&:before{
+			content: "\53";
+			color: inherit;
+		}
+	}
+}
