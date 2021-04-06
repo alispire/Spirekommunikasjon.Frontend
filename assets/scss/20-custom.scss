@@ -7,6 +7,9 @@
 		margin-top: -3px;
 		width: 12px;
 	}
+	@media (min-width: $screen-xl-min) {
+		font-size: 21px;
+	}
 }
 
 .article-main-content{

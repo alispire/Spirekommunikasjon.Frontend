@@ -3,7 +3,6 @@
 
 //=require bootstrap.js
 
-
 //=require skip-links.js
 //=require scroll-to-top.js
 //=require 10-scroll.js

@@ -22,13 +22,34 @@
 		flex-direction: column;
 		align-items: center;
 		.person{
-			margin-bottom: 40px;
+			margin-bottom: 70px;
 			max-width: 430px;
 			font-size: 19px;
+			a{
+				color: inherit;
+				&:hover{
+					color: $bregne;
+				}
+			}
 		}
-			.person-name{
+			.person-img-wrap{
+				display: block;
+				text-decoration: none;
+			}
+			[itemprop="name"]{
 				font-size: 26px;
 				font-weight: 500;
+			}
+
+			[itemprop="jobTitle"]{
+				display: block;
+				font-family: FraktionSans;
+				font-size: 16px;
+				margin-bottom: 20px;
+			}
+
+			[itemprop="telephone"]{
+				display: block;
 			}
 		
 		@media (min-width: $screen-md-min) {
@@ -44,6 +65,26 @@
 		@media (min-width: $screen-xl-min) {
 			.person{
 				width: 33.3%;
+				margin-bottom: 70px;
+				font-size: 22px;
 			}
+			.person-img-wrap{
+				margin-bottom: 1rem;
+			}
+			
+		}
+		@media (min-width: $screen-xxl-min) {
+			margin-bottom: 100px;
+
+			.person{
+				font-size: 22px;
+			}
+			[itemprop="name"]{
+				font-size: 30px;
+			}
+			[itemprop="jobTitle"]{
+				font-size: 19px;
+			}
+
 		}
 	}
