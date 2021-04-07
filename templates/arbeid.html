@@ -10,44 +10,21 @@
 				
 				<h1>Vårt arbeid</h1>
 				<p class="lead">Noe lengre ingress som forklarer litt mer spisset, hvis teksten over er litt for svende og utydelig.</p>
-				
-				<!--Script kun for frontend-utvikling -->
-				<script>
-					document.addEventListener('DOMContentLoaded', () => {
-						var triggers    = document.getElementsByClassName('work-quick-filter-btn');
-						Array.from(triggers).forEach(function(element) {
-							element.addEventListener('click', (event) => {
-								event.preventDefault();
-								var state = event.target.getAttribute('aria-selected');
-								console.log(typeof state);
-								if( state === 'true' ){
-									event.target.setAttribute( 'aria-selected', 'false' );
-								}else{
-									event.target.setAttribute( 'aria-selected', 'true' );
-								}
-								event.target.blur( );
-							});
-						});
-					});
-				</script>
-				<!--Script kun for frontend-utvikling -->
-
 
 				<nav class="work-filter">
 					<div class="work-filter-title">Hurtigfilter</div>
-					<ul class="work-quick-filter">
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false"><i class=""></i>Referanser</a></li>
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false">Fagartikler</a></li>
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false">Visuell identitet</a></li>
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false">Nettside</a></li>
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false">Foto</a></li>
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false">Kommunikasjonsplan</a></li>
-						<li><a href="#" class="work-quick-filter-btn" aria-selected="false">Design</a></li>
+					<ul class="quick-filter work-quick-filter">
+						<li><a href="#" class="work-quick-filter-btn" data-name="referanse" aria-selected="false"><i class=""></i>Referanser</a></li>
+						<li><a href="#" class="work-quick-filter-btn" data-name="fagartikkel" aria-selected="false">Fagartikler</a></li>
+						<li><a href="#" class="work-quick-filter-btn" data-name="visuell-identitet" aria-selected="false">Visuell identitet</a></li>
+						<li><a href="#" class="work-quick-filter-btn" data-name="nettside" aria-selected="false">Nettside</a></li>
+						<li><a href="#" class="work-quick-filter-btn" data-name="nyhetsbrev" aria-selected="false">Nyhetsbrev</a></li>
+						<li><a href="#" class="work-quick-filter-btn" data-name="design" aria-selected="false">Design</a></li>
 					</ul>
 					
 				</nav>
 
-					<div class="work-items">
+					<div id="filter-items" class="work-items">
 			
 						<!--=include modules/module-work-item-cupido.html -->
 			
@@ -55,21 +32,23 @@
 			
 						<!--=include modules/module-work-item-jessheimdagene.html -->
 			
-						<!--=include modules/module-work-item-cupido.html -->
+						<!--=include modules/module-work-item-vr.html -->
 			
-						<!--=include modules/module-work-item-ibolig.html -->
+						<!--=include modules/module-work-item-nyhetsbrev.html -->
 			
 						<!--=include modules/module-work-item-jessheimdagene.html -->
 
 						<!--=include modules/module-work-item-cupido.html -->
 			
 						<!--=include modules/module-work-item-ibolig.html -->
-			
+
 						<!--=include modules/module-work-item-jessheimdagene.html -->
-			
+
 						<!--=include modules/module-work-item-cupido.html -->
 			
 						<!--=include modules/module-work-item-ibolig.html -->
+			
+						
 				
 					</div>
 					<div class="work-view-more"><a href="#">Se flere</a></div>

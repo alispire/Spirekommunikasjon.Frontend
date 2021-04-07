@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/pwy0ifh.css">
   
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <script src="assets/js/script.min.js" defer></script>
+    <script>
+        var d = new Date();
+        var t = d.getTime();
+        document.write('<script type="text/javascript" src="assets/js/script.min.js?c='+t+'" defer><\/script>');
+    </script>
+    <!-- <script src="assets/js/script.min.js" defer></script> -->
     <script src="https://kit.fontawesome.com/1f1f0cd021.js" crossorigin="anonymous"></script>
 
 </head>
