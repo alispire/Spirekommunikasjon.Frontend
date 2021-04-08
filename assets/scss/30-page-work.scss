@@ -38,5 +38,7 @@
 }
 .lead{
 	// max-width: 800px;
-	margin-bottom: 80px;
+	@media (min-width: $screen-xl-min) {
+		margin-bottom: 80px;
+	}
 }
