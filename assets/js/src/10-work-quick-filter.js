@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		var state = element.getAttribute('aria-selected');
 		var name = element.getAttribute( 'data-name' );
 		
+		
 		if( state === 'true' ){
 			categories.push(name);
 		}else{
