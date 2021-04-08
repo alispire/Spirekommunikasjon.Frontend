@@ -1,11 +1,5 @@
 .page{
-	.article-header{
-		margin-bottom: 30px;
-	}
-	.lead{
-		max-width: 800px;
-		margin-bottom: 80px;
-	}
+	
 	@media ( max-width: $screen-sm-max ) {
 		.article-header{
 			display: flex;
@@ -34,3 +28,15 @@
 	// border: 1px solid red;
 }
 
+
+.article-header{
+	margin-bottom: 30px;
+	@media (min-width: $screen-xl-min) {
+		width: 58.33333%;
+
+	}
+}
+.lead{
+	// max-width: 800px;
+	margin-bottom: 80px;
+}
