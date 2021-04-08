@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var categories = [];
 	var triggers = document.querySelectorAll('ul.quick-filter a[class$="filter-btn"]');
 	var filter_items_wrapper = document.getElementById('filter-items');
-	var filter_items = filter_items_wrapper.querySelectorAll('article');
+	var filter_items = filter_items_wrapper ? filter_items_wrapper.querySelectorAll('article') : [];
 	
 	Array.from(triggers).forEach(function(element) {
 		var state = element.getAttribute('aria-selected');
