@@ -46,7 +46,7 @@ body.night-mode{
 	h1{
 		color: $spire;
 	}
-	a{
+	a:not(.btn){
 		color: $spire-2;
 	}
 

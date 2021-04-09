@@ -65,12 +65,20 @@
 
 body.night-mode{
 	.module-join{
-		color: $furu;
+		// color: $furu;
 		.btn.btn-secondary{
-			color: $furu;
+			// color: $furu;
 			&:hover{
-				color: #fff;
+				// color: #fff;
 			}
+		}
+		.item-img-wrap{
+			&:before{
+				background-color: $furu-2;
+			}
+		}
+		.txt-wrap{
+			background-color: $furu-2;
 		}
 	}
 

@@ -103,19 +103,18 @@
 
 	body.night-mode{
 		.item-two{
-			// background-color: $furu;
-			color: $body-color;
+			background-color: $furu-2;
 			.item-img-wrap{
 				&:before{
 					background-color: $furu;
 				}
 			}
-			.btn.btn-secondary{
-				color: $furu;
-				&:hover{
-					color: #fff;
-				}
-			}
+			// .btn.btn-secondary{
+			// 	color: $furu;
+			// 	&:hover{
+			// 		color: #fff;
+			// 	}
+			// }
 		}		
 
 
