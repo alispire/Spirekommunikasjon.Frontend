@@ -89,3 +89,17 @@
 #main-menu-close span{
 	@include visually-hidden();
 }
+
+
+body.night-mode{
+	#main-menu{
+		a{	
+			color: $spire;
+			&:hover,
+			&:focus{
+				color: $furu;
+				background-color: $spire;		
+			}
+		}
+	}
+}

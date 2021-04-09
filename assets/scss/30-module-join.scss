@@ -60,3 +60,18 @@
 
 
 }
+
+
+body.night-mode{
+	.module-join{
+		color: $furu;
+		.btn.btn-secondary{
+			color: $furu;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
+
+}

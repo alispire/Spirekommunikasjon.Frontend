@@ -27,15 +27,34 @@ body.night-mode{
 		}
 	}
 	#site-footer{
-		background-color: $dark-green;
+		background-color: darken($dark-green, 5%);
+		color: $spire-2;
 		@include sharpfont;
 		a{
 			color: $light-green;
 		}
 		#spire-symbol{
 			path{
-				fill: $green;
+				fill: $spire;
 			}
 		}
+		#footer-newsletter{
+			color: $spire;
+		}
 	}
+
+	h1{
+		color: $spire;
+	}
+	a{
+		color: $spire-2;
+	}
+
+		#back-to-top{
+			// color: pink;
+			path{
+				fill: $spire-2;
+			}
+		}
+
 }

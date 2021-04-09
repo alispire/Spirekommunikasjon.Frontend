@@ -52,3 +52,22 @@
 		}
 	}
 }
+
+body.night-mode{
+
+	.quick-filter-btn{
+		color: $furu;
+		color: #fff;
+			border-color: #fff;
+			background-color: $furu;
+		// @extend .btn-outline-light;
+		// border: 1px solid red;
+		&:hover,
+		&[aria-selected="true"]{
+			
+			background-color: darken($furu,5%);
+			
+		}
+	}
+
+}

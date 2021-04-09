@@ -31,7 +31,7 @@
 			position: relative;
 			padding: $page-margin;
 			&:before{
-			content: '';
+				content: '';
 				display: block;
 				position: absolute;
 				z-index: -1;
@@ -101,3 +101,23 @@
 
 	}
 
+	body.night-mode{
+		.item-two{
+			// background-color: $furu;
+			color: $body-color;
+			.item-img-wrap{
+				&:before{
+					background-color: $furu;
+				}
+			}
+			.btn.btn-secondary{
+				color: $furu;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}		
+
+
+
+	}

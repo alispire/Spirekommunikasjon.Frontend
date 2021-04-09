@@ -20,7 +20,7 @@
 		font-family: FraktionSans;
 		font-size: 40px;
 		line-height: 48px;
-		color: $dark-green;
+		color: $furu;
 	}
 	.btn-wrap{
 		position: relative;
@@ -91,7 +91,7 @@
 
 			font-size: 50px;
 			line-height: 59px;
-			color: $dark-green;
+			// color: $dark-green;
 		}
 		.snakkeboble-wrapper{
 			align-items: flex-start;
@@ -123,4 +123,13 @@
 			width: 750px;
 		}
 	}
+}
+
+
+body.night-mode{
+	.module-title{
+		color: #fff;
+	}
+
+
 }

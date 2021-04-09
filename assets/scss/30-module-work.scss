@@ -154,3 +154,29 @@
 		}
 	}
 }
+
+body.night-mode{
+	.module-work-title{
+		a{
+			color: $spire-2;
+		}
+	}
+	.module-work-item-title{
+		a{
+			color: $spire-2;
+		}
+	}
+
+	.module-work-tags{
+		li{
+			color: $spire-3;
+			a{
+				color: $spire-3;
+			}
+		}
+	}
+	.module-work-fagartikler{
+		background-color: darken($furu, 5%);
+		
+	}
+}

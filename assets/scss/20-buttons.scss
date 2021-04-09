@@ -41,3 +41,16 @@ Så jeg må overskrive knappestilen her
 .btn-lg{
     font-size: 19px;
 }
+
+
+body.night-mode{
+    .btn-primary{
+        background-color: $green;
+        border-color: $green;
+        color: $dark-green;
+        &:hover{
+            background-color: $dark-green;
+            border-color: $dark-green;
+        }
+    }
+}
