@@ -129,7 +129,6 @@
 #filter-items{
 	&[data-animating="animating"]{
 		animation: fadein 1s;
-		border: 1px solid red;
 	}
 	.module-work-item,
 	.person{

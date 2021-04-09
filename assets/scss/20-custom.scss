@@ -27,8 +27,10 @@
 		transform: rotate(-90deg);
 		margin-top: -3px;
 		width: 12px;
+		border: 1px solid red;
 	}
 	@media (min-width: $screen-xl-min) {
 		font-size: 21px;
 	}
 }
+

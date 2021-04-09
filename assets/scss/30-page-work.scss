@@ -29,7 +29,7 @@
 }
 
 
-.article-header{
+.article-header:not(.full-width){
 	margin-bottom: 30px;
 	@media (min-width: $screen-xl-min) {
 		width: 58.33333%;

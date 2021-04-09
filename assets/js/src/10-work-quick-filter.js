@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			filter_items_wrapper.setAttribute("data-animating",'animating');
 			var nIntervId = setInterval(function(){
 				filter_items_wrapper.removeAttribute("data-animating");
-			}, 5000);
+			}, 2000);
 			filter();
 
 		});

@@ -1,0 +1,121 @@
+.person-page-content{
+	
+	margin-left: -$page-margin;
+	margin-right: -$page-margin;
+	// border: 1px solid red;
+	position: relative;
+	z-index: -1;
+	background-color: $spire-2;
+	&::before{
+		content: '';
+		position: absolute;
+		height: 200px;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		background-color: $body-bg;
+		@media (min-width: $screen-md-min) {
+			height: 300px;
+		}
+	}
+	.person-page-content-inner{
+		max-width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: $page-margin;
+		padding-right: $page-margin;
+		padding-bottom: 30px;
+	}
+	header{
+		
+		
+		
+	}
+	.person-page-image-wrap{
+		
+		margin-bottom: $grid-gutter-width;
+		img{}
+	}
+
+	.person-name{
+		font-family: inherit;
+		// font-size: 26px;
+		font-weight: 400;
+		color: $body-color;
+	}
+	
+	.person-info{
+		margin-bottom: 30px;
+		font-size: 16px;
+		@media (min-width: $screen-xxl-min) {
+			margin-bottom: 60px;
+			font-size: 19px;
+		}
+
+	}
+		.person-info-group{
+			padding-bottom: $paragraph-margin-bottom;
+		}
+			[itemprop="jobTitle"]{
+				font-family: FraktionSans;
+			}
+			[itemprop="address"]{
+				font-family: FraktionSans;
+			}
+	.person-description{
+		// padding-left: $page-margin;
+		// padding-left: $page-margin;
+		// background-color: $spire-2;
+	}
+	.person-description-title{		
+		font-weight: 400;
+	}
+	
+	.person-description-part{
+		margin-bottom: $paragraph-margin-bottom;
+		h3{
+			display: inline;
+			font-size: inherit;
+			
+		}
+		p{
+			display: inline;
+		}
+		@media (min-width: $screen-xl-min) {
+			margin-bottom: $paragraph-margin-bottom*3;
+		}
+
+	}
+
+
+
+
+
+
+
+	@media (min-width: $screen-xl-min) {
+		
+		  font-size: 19px;
+		  h1 {
+		//   font-size: 26px;
+	  
+		}
+		h2 {
+		//   font-size: 26px; 
+		}
+	}
+	@media (min-width: $screen-xxl-min) {
+		
+		font-size: 27px;
+		h1 {
+			// font-size: 38px;
+		}
+		h2 {
+			// font-size: 38px; 
+		}
+	}
+
+
+
+}

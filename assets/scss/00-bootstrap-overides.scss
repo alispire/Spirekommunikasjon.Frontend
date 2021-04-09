@@ -143,3 +143,24 @@ $input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-border-width:      1px !default;
 
 
+$input-border-radius:                   0px !default;
+$input-border-radius-sm:                0px !default;
+$input-border-radius-lg:                0px !default;
+$input-border-color:                    $furu !default;
+$input-border-width:                    2px !default;
+
+
+
+$form-check-input-border:                 2px solid $furu !default;
+$form-check-input-border-radius:          0px !default;
+$form-check-radio-border-radius:          50% !default;
+
+$form-check-input-checked-color:          $furu !default;
+$form-check-input-checked-bg-color:       $spire-2 !default;
+$form-check-input-checked-border-color:   $furu !default;
+
+
+$form-switch-color:               $furu !default;
+// $form-switch-focus-color:         $bregne !default;
+$form-switch-checked-color:       $bregne !default;
+
