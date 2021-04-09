@@ -5,12 +5,13 @@
 	margin-bottom: 40px;
 	
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 
 	text-align: center;
 	.item-img-wrap{
 		position: relative;
 		padding: $page-margin;
+		// z-index: 2;
 		&:before{
 		content: '';
 			display: block;
