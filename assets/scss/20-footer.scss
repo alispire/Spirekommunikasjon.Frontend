@@ -78,7 +78,11 @@
         flex-basis: 100%;
     }
     .footer-cont-col-50{
-        flex-basis: 50%;
+        // flex-basis: 50%;
+    }
+    .footer-cont-col-50 + .footer-cont-col-50{
+        flex-grow: 1;
+        margin-left: $grid-gutter-width*2;
     }
     #footer-ledig-stilling{
         margin-top: $paragraph-margin-bottom;
