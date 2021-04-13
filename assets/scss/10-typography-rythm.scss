@@ -69,3 +69,16 @@
 		font-size: 36pt; //	1.25rem
 	}
 }
+
+
+.article-main-content{
+  p, ul, ol, figure, picture, img{
+    &+h2{
+      margin-top: 2rem;
+    }
+    &+h3{
+      margin-top: 1rem;
+    }
+  }
+
+}
