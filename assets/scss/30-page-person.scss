@@ -4,7 +4,7 @@
 	margin-right: -$page-margin;
 	// border: 1px solid red;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 	background-color: $spire-2;
 	&::before{
 		content: '';
