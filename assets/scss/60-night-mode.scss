@@ -26,6 +26,9 @@ body.night-mode{
 		background-color: darken($dark-green, 5%);
 		color: $spire-2;
 		@include sharpfont;
+		#footer-title {
+			color: $light-green
+		}
 		a{
 			color: $light-green;
 		}
