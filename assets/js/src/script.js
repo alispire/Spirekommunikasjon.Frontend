@@ -7,5 +7,6 @@
 //=require scroll-to-top.js
 //=require 10-scroll.js
 //=require 10-touch-menu.js
+//=require 10-dark-mode.js
 //=require 10-work-quick-filter.js
 

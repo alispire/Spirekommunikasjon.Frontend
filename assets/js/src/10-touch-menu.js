@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var trigger     = document.getElementById('main-menu-toggle');
 	var closeBtn    = document.getElementById('main-menu-close');
 	var triggers    = document.getElementsByClassName('main-menu-toggle');
-	var nightSwitch = document.getElementById('night-switch');
 	
-	// console.log('foo');
 	Array.from(triggers).forEach(function(element) {
 		element.addEventListener('click', (event) => {
 			body.classList.toggle('menu-out');
@@ -16,9 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	nightSwitch.addEventListener('change', (event) => {
-		body.classList.toggle('night-mode');	
-	});
+
 
 	
 });
