@@ -20,8 +20,8 @@
 		// border: 1px solid $gray-300;
 	}
 		.module-work-title{
-			font-weight: normal;
-			font-size: 26px;
+			font-weight: 700;
+			font-size: $h4-font-size;
 			margin-bottom: $paragraph-margin-bottom;
 			a{
 				color: $bregne;
@@ -55,7 +55,7 @@
 				}
 			}
 				.module-work-item-title{
-					font-size: 26px;
+					// font-size: 26px;
 					
 					a{
 						color: $txt-color;
@@ -112,10 +112,10 @@
 	}
 	@media (min-width: $screen-xxl-min) {
 		.module-work-item-title{
-			font-size: 37px;
+			font-size: $h2-font-size;
 		}
 		.module-work-introTxt{
-			font-size: 27px;
+			font-size: $font-size-lg;
 		}
 	}
 

@@ -90,8 +90,8 @@
 			padding-top: 150px;
 			.item p,
 			.item .item-title{
-				padding-left: $page-margin;
-				padding-right: $page-margin;
+				padding-left: $page-margin*2;
+				padding-right: $page-margin*2;
 			}
 			.item-img-wrap{
 				padding: $page-margin*2;
