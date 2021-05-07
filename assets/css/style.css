@@ -7031,8 +7031,11 @@ body.night-mode #snakkeboble path {
   position: relative;
   justify-content: center; }
   .module-work .module-work-inner {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     position: relative;
-    margin-left: 0px;
     padding-top: 20px;
     padding-bottom: 20px; }
   .module-work .module-work-title {
@@ -7051,6 +7054,11 @@ body.night-mode #snakkeboble path {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem; }
+    .module-work .module-work-items:after {
+      content: ' ';
+      display: block;
+      width: 1.5rem;
+      border-left: 1px solid transparent; }
   .module-work .module-work-item {
     width: 225px;
     margin-right: 1.5rem;
@@ -7082,6 +7090,9 @@ body.night-mode #snakkeboble path {
           margin: 0;
           padding: 0;
           overflow-x: hidden; }
+          .module-work .module-work-inner .module-work-items:after {
+            content: none;
+            display: none; }
         .module-work .module-work-inner .module-work-item {
           width: 30%;
           flex: 0 0 30%;
