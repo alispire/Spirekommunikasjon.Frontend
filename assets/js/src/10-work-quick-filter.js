@@ -1,3 +1,8 @@
+
+/**
+ * Extend Array.prototype width remove function
+ * @return {[Array]}
+ */
 Array.prototype.remove = function() {
     var what, a = arguments, L = a.length, ax;
     while (L && this.length) {
@@ -9,24 +14,62 @@ Array.prototype.remove = function() {
     return this;
 };
 
+/**
+ * Returns an Array of all url parameters
+ * @return {[Array]} [Key Value pairs form URL]
+ */
+ function getAllUrlParams() {
+    var keyPairs = [],
+          params = window.location.search.substring(1).split('&');
+    for (var i = params.length - 1; i >= 0; i--) {
+        keyPairs.push(params[i].split('='));
+    };
+    return keyPairs;
+}
+
+/**
+ * Returns an Array of filters
+ * @return {[Array]}
+ */
+function getFilters(){
+	var urlParams = getAllUrlParams();
+	var urlFilters;
+	urlParams.forEach(function(e){
+		if( e[0] == 'filter' ){
+			urlFilters = e[1].split(',');
+		}
+	});
+	return urlFilters;
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	var categories = [];
+	
+	var categories = getFilters() ? getFilters() : Array();
 	var triggers = document.querySelectorAll('ul.quick-filter a[class$="filter-btn"]');
 	var filter_items_wrapper = document.getElementById('filter-items');
 	var filter_items = filter_items_wrapper ? filter_items_wrapper.querySelectorAll('article') : [];
+	
 	
 	Array.from(triggers).forEach(function(element) {
 		var state = element.getAttribute('aria-selected');
 		var name = element.getAttribute( 'data-name' );
 		
+
+		categories.forEach( function(e){
+			if( e == name){
+				element.setAttribute( 'aria-selected', 'true' );
+			};
+		});
+
 		
-		if( state === 'true' ){
-			categories.push(name);
-		}else{
-			categories.remove( name );
-		}
+		// if( state === 'true' ){
+		// 	categories.push(name);
+		// }else{
+		// 	categories.remove( name );
+		// }
+
 
 		element.addEventListener('click', (event) => {
 			event.preventDefault();
@@ -47,8 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			var nIntervId = setInterval(function(){
 				filter_items_wrapper.removeAttribute("data-animating");
 			}, 2000);
-			filter();
 
+			/*Run the filter */
+			filter();
 		});
 
 	});
