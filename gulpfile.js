@@ -43,9 +43,12 @@ function styles() {
         .pipe(sass().on('error', sass.logError))
         .on('error', swallowError)
         .pipe(autoprefixer())
+        .pipe(rename('style.css'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(dest(pathFiles.build.css))
         .pipe(cleanCSS({level: {1: {specialComments: false}}}))
         .pipe(rename('style.min.css'))
-        .pipe(sourcemaps.write('./'))
+        // .pipe(sourcemaps.write('./'))
         .pipe(dest(pathFiles.build.css))
         .pipe(livereload());
 }
@@ -58,9 +61,9 @@ function scripts() {
             presets: ['@babel/env']
         }))
         .on('error', swallowError)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         // .pipe(uglify())
-        .pipe(sourcemaps.write('./'))
+        // .pipe(sourcemaps.write('./'))
         .pipe(dest(pathFiles.build.js))
         .pipe(livereload());
         
@@ -143,5 +146,5 @@ exports.gulpWatch = gulpWatch;
 // exports.build = series(styles, scripts, html);
 // exports.default = series(styles, scripts, gulpWatch);
 
-exports.build = series(styles, scripts, html, contentImages);
-exports.default = series(styles, scripts, html, contentImages, gulpWatch);
+exports.build = series(styles, scripts, html, );
+exports.default = series(styles, scripts, html, gulpWatch);
