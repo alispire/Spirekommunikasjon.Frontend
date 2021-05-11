@@ -107,7 +107,7 @@
 	}
 	@media (min-width: $screen-xxl-min) {
 		
-		font-size: 27px;
+		font-size: 1.3rem;
 		h1 {
 			// font-size: 38px;
 		}
@@ -118,4 +118,10 @@
 
 
 
+}
+body.night-mode .person-page-content{
+	&::before{
+		background-color: $furu;
+	}
+	color: $body-color;
 }

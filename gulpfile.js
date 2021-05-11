@@ -68,7 +68,8 @@ function scripts() {
         .pipe(livereload());
         
 }
-// var html_path = ['./templates/*.html', './templates/modules/*.html'];
+
+
 function html(){
     return src(['./templates/*.html','./templates/*.svg'], {removeBOM:true})
         .pipe(include({ hardFail: true }))
@@ -77,62 +78,12 @@ function html(){
         .pipe(livereload());
 }
 
-function contentImages(path, stats){
-    return gulp
-    .src(['./src-images/16:9/*.{png,jpg,jpeg}'])
-    .pipe(debug({title: 'unicorn:'}))
-    .pipe(
-        responsive(
-            {
-                '*.{png,jpg,jpeg}': [
-                    {
-                        width: 1920,
-                        height: 1080,
-                        format: 'webp',
-                        rename: { suffix: '-1920x1080' }
-                    },
-                    {
-                        width: 960,
-                        height: 540,
-                        format: 'webp',
-                        rename: { suffix: '-960x540' }
-                    },
-                    {
-                        width: 1920,
-                        height: 1080,
-                        format: 'jpg',
-                        rename: { suffix: '-1920x1080' }
-                    },
-                    {
-                        width: 960,
-                        height: 540,
-                        format: 'jpg',
-                        rename: { suffix: '-960x540' }
-                    },
-                ]
-            },
-            {
-                quality: 50,
-            }
-        )
-      )
-      .pipe(gulp.dest('./dest-images/'))
-}
-
-
-// var imgWatcher = watch( ['./src-images/16:9/*.{png,jpg,jpeg}'] );
-// imgWatcher.on([ 'add','change','unlink' ], function(path, stats) {
-//     var_dump(`File ${path} was changed`);
-//   }); 
-
-
 
 function gulpWatch(done) {
     livereload.listen();
     watch(pathFiles.src.css, styles);
     watch(pathFiles.src.js, scripts);
     watch(['./templates/*.html','./templates/modules/*.html'], html);
-    watch( ['./src-images/16:9/*.{png,jpg,jpeg}'], contentImages );
     done();
 }
 
@@ -140,11 +91,8 @@ function gulpWatch(done) {
 exports.styles = styles;
 exports.scripts = scripts;
 exports.html = html;
-exports.contentImages = contentImages;
 exports.gulpWatch = gulpWatch;
 
-// exports.build = series(styles, scripts, html);
-// exports.default = series(styles, scripts, gulpWatch);
 
 exports.build = series(styles, scripts, html, );
 exports.default = series(styles, scripts, html, gulpWatch);

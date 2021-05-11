@@ -1,6 +1,6 @@
 body.night-mode{
 	color: $body-bg;
-	background-color: $dark-green;
+	background-color: $furu;
 	#site-header{}
 	#spire-logo{
 		path{
@@ -8,13 +8,14 @@ body.night-mode{
 		}
 		&:hover{
 			path{
-				fill: $dark-green;
+				fill: $furu;
 			}
 		}
 	}
 	#main-menu-toggle{
 		color: $body-bg;
 		span{
+
 			border-top-color: $body-bg;
 			border-bottom-color: $body-bg;
 			&::after{
@@ -54,6 +55,15 @@ body.night-mode{
 			path{
 				fill: $spire-2;
 			}
+		}
+
+		.back-to-parent{
+			
+			.arrow-up{}
+			.arrow-up-cls{
+				fill: $spire-2;
+			}
+			
 		}
 
 }

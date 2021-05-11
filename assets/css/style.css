@@ -7523,7 +7523,12 @@ body.night-mode .quick-filter-btn {
       font-size: 19px; } }
   @media (min-width: 1400px) {
     .person-page-content {
-      font-size: 27px; } }
+      font-size: 1.3rem; } }
+
+body.night-mode .person-page-content {
+  color: #040504; }
+  body.night-mode .person-page-content::before {
+    background-color: #1D3F3D; }
 
 .work .page-container-inner {
   padding-top: 40px; }
@@ -7695,6 +7700,8 @@ body.night-mode {
   .screen-reader-shortcut:focus):not(.quick-filter-btn) {
     color: #99F5CB; }
   body.night-mode #back-to-top path {
+    fill: #99F5CB; }
+  body.night-mode .back-to-parent .arrow-up-cls {
     fill: #99F5CB; }
 
 /*# sourceMappingURL=style.css.map */
