@@ -7059,19 +7059,6 @@ body.night-mode #snakkeboble path {
       display: block;
       width: 1.5rem;
       border-left: 1px solid transparent; }
-  .module-work .module-work-item {
-    width: 225px;
-    margin-right: 1.5rem;
-    flex: 0 0 225px; }
-    .module-work .module-work-item picture {
-      display: block;
-      margin-bottom: 0.5rem; }
-  .module-work .module-work-item-title a {
-    color: #040504; }
-  .module-work .module-work-readmore {
-    padding-top: 10px;
-    font-size: 1.03906rem;
-    text-align: center; }
   @media (min-width: 768px) {
     .module-work {
       padding-left: 0;
@@ -7092,15 +7079,33 @@ body.night-mode #snakkeboble path {
           overflow-x: hidden; }
           .module-work .module-work-inner .module-work-items:after {
             content: none;
-            display: none; }
-        .module-work .module-work-inner .module-work-item {
-          width: 30%;
-          flex: 0 0 30%;
-          margin: 0 0 35px 0; } }
+            display: none; } }
+
+/*
+Styling of items
+*/
+.module-work-item {
+  width: 225px;
+  margin-right: 1.5rem;
+  flex: 0 0 225px; }
+  .module-work-item picture {
+    display: block;
+    margin-bottom: 1rem; }
+  .module-work-item .module-work-item-title a {
+    color: #040504; }
+  .module-work-item .module-work-readmore {
+    padding-top: 10px;
+    font-size: 1.03906rem;
+    text-align: center; }
+  @media (min-width: 768px) {
+    .module-work-item {
+      width: 30%;
+      flex: 0 0 30%;
+      margin: 0 0 35px 0; } }
   @media (min-width: 1400px) {
-    .module-work .module-work-item-title {
+    .module-work-item .module-work-item-title {
       font-size: 2.07812rem; }
-    .module-work .module-work-introTxt {
+    .module-work-item .module-work-introTxt {
       font-size: 1.48438rem; } }
 
 .module-work-fagartikler {
@@ -7109,7 +7114,7 @@ body.night-mode #snakkeboble path {
 .module-work-tags {
   display: flex;
   padding: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   list-style-type: none;
   list-style-position: inside; }
   .module-work-tags li {
