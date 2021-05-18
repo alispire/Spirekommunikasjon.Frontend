@@ -7072,7 +7072,7 @@ body.night-mode #snakkeboble path {
         .module-work .module-work-inner .module-work-items {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
+          justify-content: flex-start;
           max-width: 100%;
           margin: 0;
           padding: 0;
@@ -7101,7 +7101,9 @@ Styling of items
     .module-work-item {
       width: 30%;
       flex: 0 0 30%;
-      margin: 0 0 35px 0; } }
+      margin: 0 0 35px 3.3333%; }
+      .module-work-item:nth-child(3n + 1) {
+        margin-left: 0; } }
   @media (min-width: 1400px) {
     .module-work-item .module-work-item-title {
       font-size: 2.07812rem; }
@@ -7596,6 +7598,7 @@ body.night-mode .person-page-content {
       padding: 0 15px 0 15px;
       flex: 1 0 50%;
       width: 50%;
+      margin: 0;
       margin-bottom: 30px; }
     .work .work-items:not(.filtered) .module-work-item:nth-child(7) {
       flex: 0 0 100%;
