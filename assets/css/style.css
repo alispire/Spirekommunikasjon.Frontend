@@ -7101,7 +7101,7 @@ Styling of items
     .module-work-item {
       width: 30%;
       flex: 0 0 30%;
-      margin: 0 0 35px 3.3333%; }
+      margin: 0 0 35px 5%; }
       .module-work-item:nth-child(3n + 1) {
         margin-left: 0; } }
   @media (min-width: 1400px) {
