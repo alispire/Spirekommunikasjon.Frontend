@@ -4,7 +4,7 @@ Dette trenger du:
 - [Node package manager (NPM)](https://www.npmjs.com/)
 - [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start) på din maskin.
 
-## Fremgangsmåte
+## Fremgangsmåte  
 1. Klon git-repoet
 2. Gå til mappen med prosjektet
 3. Kjør `npm init`
@@ -27,3 +27,4 @@ Inkluder så filene i `assets/js/src/script.js`med følgende syntax. Eksempler:
 //=include relative/path/to/file.js
 //=include ./relative/path/to/file-even-when-includePaths-set.js
 ```
+
