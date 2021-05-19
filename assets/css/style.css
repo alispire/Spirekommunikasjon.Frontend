@@ -6591,11 +6591,6 @@ font-style: italic;
   margin-top: 15px;
   margin-bottom: 5px;
   width: 50px; }
-  #logo-wrapper:hover, #logo-wrapper:focus {
-    outline: none;
-    background: #dafbec; }
-    #logo-wrapper:hover path, #logo-wrapper:focus path {
-      fill: #1D3F3D; }
   @media (min-width: 992px) {
     #logo-wrapper {
       width: 90px;
@@ -6604,6 +6599,18 @@ font-style: italic;
     #logo-wrapper {
       width: 102px;
       margin-top: 70px; } }
+
+a#logo-wrapper:focus {
+  outline: none;
+  background: #dafbec;
+  background: #00E57E;
+  box-shadow: 0 0 0 5px #00E57E;
+  border-radius: 10px; }
+  a#logo-wrapper:focus path {
+    fill: #1D3F3D; }
+
+a#logo-wrapper:hover path {
+  fill: #1D3F3D; }
 
 #spire-logo {
   width: 100%; }

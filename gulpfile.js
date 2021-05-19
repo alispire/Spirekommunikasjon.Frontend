@@ -1,6 +1,5 @@
 const production = ( process.env.NODE_ENV == 'production' );
-const var_dump = require('var_dump');
-const debug = require('gulp-debug');
+
 //base part
 let {src, dest, parallel, series, watch} = require('gulp'),
     rename  = require('gulp-rename'),
