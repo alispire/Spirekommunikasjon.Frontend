@@ -21,7 +21,7 @@
 	}
 }
 a#logo-wrapper{
-	&:focus{
+	&:focus-visible{
 		outline: none;	
 		background: lighten(#CCFAE5, 3%);
 		background: $spire;

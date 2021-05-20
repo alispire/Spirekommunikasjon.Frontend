@@ -6600,13 +6600,13 @@ font-style: italic;
       width: 102px;
       margin-top: 70px; } }
 
-a#logo-wrapper:focus {
+a#logo-wrapper:focus-visible {
   outline: none;
   background: #dafbec;
   background: #00E57E;
   box-shadow: 0 0 0 5px #00E57E;
   border-radius: 10px; }
-  a#logo-wrapper:focus path {
+  a#logo-wrapper:focus-visible path {
     fill: #1D3F3D; }
 
 a#logo-wrapper:hover path {
@@ -7559,7 +7559,6 @@ body.night-mode .person-page-content {
       margin-right: -1.5rem; }
       .work .work-items .module-work-item {
         position: relative;
-        z-index: -1;
         margin-right: 0px;
         width: 100%;
         padding-left: 1.5rem;
