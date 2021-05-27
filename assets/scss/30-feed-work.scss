@@ -149,8 +149,23 @@
 	padding-top: 20px;
 }
 
-body.night-mode{
-
+body.night-mode.work {
+	@media (max-width: $screen-xs-max) {
+		.work-items .module-work-item{
+			background-color: $furu;
+			&:first-child{
+				&::before{
+					background-color: $furu;
+				}
+			}
+			&:last-child{
+				background-color: transparent;
+				&::before{
+					background-color: $furu;
+				}
+			}
+		}
+	}
 
 	
 }

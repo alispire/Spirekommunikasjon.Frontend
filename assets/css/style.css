@@ -7646,6 +7646,16 @@ body.night-mode .person-page-content {
   padding-bottom: 60px;
   padding-top: 20px; }
 
+@media (max-width: 575px) {
+  body.night-mode.work .work-items .module-work-item {
+    background-color: #1D3F3D; }
+    body.night-mode.work .work-items .module-work-item:first-child::before {
+      background-color: #1D3F3D; }
+    body.night-mode.work .work-items .module-work-item:last-child {
+      background-color: transparent; }
+      body.night-mode.work .work-items .module-work-item:last-child::before {
+        background-color: #1D3F3D; } }
+
 @media (max-width: 767px) {
   .page .article-header {
     display: flex;
