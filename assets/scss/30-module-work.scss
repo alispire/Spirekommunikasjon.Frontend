@@ -154,6 +154,7 @@ Styling of items
 
 .module-work-tags{
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 
 	margin-bottom: $paragraph-margin-bottom;
@@ -164,9 +165,12 @@ Styling of items
 		font-size: 16px;
 		color: $body-color;
 		text-decoration: none;
+		&:after{
+			content: '\00a0';
+		}
 		
 		&+li:before{
-			content: '\00a0•\00a0';
+			content: '•\00a0';
 		}
 		a{
 			color: $body-color;

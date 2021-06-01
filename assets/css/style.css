@@ -7122,6 +7122,7 @@ Styling of items
 
 .module-work-tags {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin-bottom: 1rem;
   list-style-type: none;
@@ -7131,8 +7132,10 @@ Styling of items
     font-size: 16px;
     color: #040504;
     text-decoration: none; }
+    .module-work-tags li:after {
+      content: '\00a0'; }
     .module-work-tags li + li:before {
-      content: '\00a0•\00a0'; }
+      content: '•\00a0'; }
     .module-work-tags li a {
       color: #040504;
       text-decoration: none; }
