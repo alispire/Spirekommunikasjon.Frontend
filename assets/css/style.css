@@ -7698,8 +7698,8 @@ body.night-mode {
   background-color: #1D3F3D; }
   body.night-mode #spire-logo path {
     fill: #fafafa; }
-  body.night-mode #spire-logo:hover path {
-    fill: #1D3F3D; }
+  body.night-mode a #spire-logo:hover path {
+    fill: #00E57E; }
   body.night-mode #main-menu-toggle {
     color: #fafafa; }
     body.night-mode #main-menu-toggle span {
