@@ -1,4 +1,4 @@
-/*Spirefarger.*/
+/*Spirefarger*/
 $spire: #00E57E;
 $spire-2: #99F5CB;
 $spire-3: #CCFAE5;
@@ -92,9 +92,9 @@ $component-active-color:      $white !default;
 $component-active-bg:         $primary !default;
 
 
-$headings-font-family:        lato !default;
-$font-family-sans-serif:      lato, times, sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-// $font-family-sans-serif:      lato;
+$headings-font-family:        Figtree !default;
+$font-family-sans-serif:      Figtree, times, sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif:      Figtree;
 
 $font-size-base:              1.1875rem !default; // Aprox 19px Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
